@@ -1,0 +1,1065 @@
+<HTML>
+<HEAD>
+<BASE TARGET="contentframe">
+<style type="text/css">
+<!--
+.class1 A       { color:black; cursor:pointer; text-decoration: underline; font-weight:bold; font-size:20; font-family:default }
+.class1 A:hover { color:#000099; cursor:pointer; text-decoration: underline; font-weight:bold; font-size:20; font-family:default }
+.class2 A { color:#003366; cursor:pointer; font-size:20; font-family:default }
+.class2 A:hover { color:#0066AA; cursor:pointer; font-size:20; font-family:default }
+A { color:#003366; font-family:courier new; font-size:16; text-decoration:none }
+A:hover { color:#0066AA; font-family:courier new; font-size:16; text-decoration:none }
+H1 { padding: 0; margin: 0; }
+H2 { padding: 0; margin: 0; }
+.cmdlist {
+border:1px solid #ccc;
+background:#EAEAEA;
+padding:20px;
+}
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+	var el = document.getElementById(obj);
+	if ( el.style.display != "none" ) {
+		el.style.display = 'none';
+	}
+	else {
+		el.style.display = '';
+	}
+}
+function collapse(obj)
+{
+	var el = document.getElementById(obj);
+	if ( el )
+		el.style.display = 'none';
+}
+function expand(obj)
+{
+	var el = document.getElementById(obj);
+	if ( el )
+		el.style.display = '';
+}
+function collapseAll()
+{
+	collapse("");
+	collapse("libcod");
+	collapse("AI");
+	collapse("Animation");
+	collapse("BadPlaces");
+	collapse("Clans");
+	collapse("Client");
+	collapse("Control");
+	collapse("Damage");
+	collapse("Debug");
+	collapse("Dvars");
+	collapse("Effects");
+	collapse("Entity");
+	collapse("File");
+	collapse("HUD");
+	collapse("Level");
+	collapse("Math");
+	collapse("Menus");
+	collapse("Missile");
+	collapse("Motion");
+	collapse("Objective");
+	collapse("Physics");
+	collapse("Player");
+	collapse("Precache");
+	collapse("Rumble");
+	collapse("Save");
+	collapse("Sentient");
+	collapse("Sound");
+	collapse("Spawn");
+	collapse("String");
+	collapse("System");
+	collapse("Teams");
+	collapse("Trace");
+	collapse("Triggers");
+	collapse("Turret");
+	collapse("Variables");
+	collapse("Vector");
+	collapse("Vehicles");
+	collapse("Weapons");
+}
+function expandAll()
+{
+	expand("");
+	expand("libcod");
+	expand("AI");
+	expand("Animation");
+	expand("BadPlaces");
+	expand("Clans");
+	expand("Client");
+	expand("Control");
+	expand("Damage");
+	expand("Debug");
+	expand("Dvars");
+	expand("Effects");
+	expand("Entity");
+	expand("File");
+	expand("HUD");
+	expand("Level");
+	expand("Math");
+	expand("Menus");
+	expand("Missile");
+	expand("Motion");
+	expand("Objective");
+	expand("Physics");
+	expand("Player");
+	expand("Precache");
+	expand("Rumble");
+	expand("Save");
+	expand("Sentient");
+	expand("Sound");
+	expand("Spawn");
+	expand("String");
+	expand("System");
+	expand("Teams");
+	expand("Trace");
+	expand("Triggers");
+	expand("Turret");
+	expand("Variables");
+	expand("Vector");
+	expand("Vehicles");
+	expand("Weapons");
+}
+//-->
+</script>
+</HEAD>
+<BODY BGCOLOR='CFCFCF'>
+<H1><CENTER>Script Docs</CENTER></H1>
+<HR>
+<a href="main.htm" TARGET="main">Home</a><br>
+<a href="" onClick="collapseAll(); return false;" title='Collapse All'>Collapse All</a><br>
+<a href="" onClick="expandAll(); return false;" title='Expand All'>Expand All</a><br>
+</H2><HR><BR>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu(''); return false;" title='Expand/Collapse '></a><br></SPAN>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('libcod'); return false;" title='Expand/Collapse libcod'>libcod</a><br></SPAN>
+<div id='libcod' CLASS='cmdlist'>
+<A HREF="printf.htm" TARGET="main" >printf</a><br>
+<A HREF="printfline.htm" TARGET="main" >printfline</a><br>
+<A HREF="mysql_init.htm" TARGET="main" >mysql_init</a><br>
+<A HREF="mysql_real_connect.htm" TARGET="main" >mysql_real_connect</a><br>
+<A HREF="mysql_close.htm" TARGET="main" >mysql_close</a><br>
+<A HREF="mysql_query.htm" TARGET="main" >mysql_query</a><br>
+<A HREF="mysql_errno.htm" TARGET="main" >mysql_errno</a><br>
+<A HREF="mysql_error.htm" TARGET="main" >mysql_error</a><br>
+<A HREF="mysql_affected_rows.htm" TARGET="main" >mysql_affected_rows</a><br>
+<A HREF="mysql_store_result.htm" TARGET="main" >mysql_store_result</a><br>
+<A HREF="mysql_num_rows.htm" TARGET="main" >mysql_num_rows</a><br>
+<A HREF="mysql_num_fields.htm" TARGET="main" >mysql_num_fields</a><br>
+<A HREF="mysql_field_seek.htm" TARGET="main" >mysql_field_seek</a><br>
+<A HREF="mysql_fetch_field.htm" TARGET="main" >mysql_fetch_field</a><br>
+<A HREF="mysql_fetch_row.htm" TARGET="main" >mysql_fetch_row</a><br>
+<A HREF="mysql_free_result.htm" TARGET="main" >mysql_free_result</a><br>
+<A HREF="mysql_real_escape_string.htm" TARGET="main" >mysql_real_escape_string</a><br>
+<A HREF="memory_malloc.htm" TARGET="main" >memory_malloc</a><br>
+<A HREF="memory_free.htm" TARGET="main" >memory_free</a><br>
+<A HREF="memory_int_get.htm" TARGET="main" >memory_int_get</a><br>
+<A HREF="memory_int_set.htm" TARGET="main" >memory_int_set</a><br>
+<A HREF="memory_memset.htm" TARGET="main" >memory_memset</a><br>
+<A HREF="disableGlobalPlayerCollision.htm" TARGET="main" >disableGlobalPlayerCollision</a><br>
+<A HREF="getAscii.htm" TARGET="main" >getAscii</a><br>
+<A HREF="system.htm" TARGET="main" >system</a><br>
+<A HREF="file_link.htm" TARGET="main" >file_link</a><br>
+<A HREF="file_unlink.htm" TARGET="main" >file_unlink</a><br>
+<A HREF="file_exists.htm" TARGET="main" >file_exists</a><br>
+<A HREF="FS_LoadDir.htm" TARGET="main" >FS_LoadDir</a><br>
+<A HREF="getType.htm" TARGET="main" >getType</a><br>
+<A HREF="stringToFloat.htm" TARGET="main" >stringToFloat</a><br>
+<A HREF="rundll.htm" TARGET="main" >rundll</a><br>
+<A HREF="Cmd_ExecuteString.htm" TARGET="main" >Cmd_ExecuteString</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('AI'); return false;" title='Expand/Collapse AI'>AI</a><br></SPAN>
+<div id='AI' CLASS='cmdlist'>
+<A HREF="aimatpos.htm" TARGET="main" >aimatpos</a><br>
+<A HREF="allowedstances.htm" TARGET="main" >allowedstances</a><br>
+<A HREF="animcustom.htm" TARGET="main" >animcustom</a><br>
+<A HREF="animmode.htm" TARGET="main" >animmode</a><br>
+<A HREF="beginprediction.htm" TARGET="main" >beginprediction</a><br>
+<A HREF="canattackenemynode.htm" TARGET="main" >canattackenemynode</a><br>
+<A HREF="cansee.htm" TARGET="main" >cansee</a><br>
+<A HREF="canshoot.htm" TARGET="main" >canshoot</a><br>
+<A HREF="canuseturret.htm" TARGET="main" >canuseturret</a><br>
+<A HREF="checkcoverexitposwithpath.htm" TARGET="main" >checkcoverexitposwithpath</a><br>
+<A HREF="checkgrenadelaunch.htm" TARGET="main" >checkgrenadelaunch</a><br>
+<A HREF="checkgrenadelaunchpos.htm" TARGET="main" >checkgrenadelaunchpos</a><br>
+<A HREF="checkgrenadethrow.htm" TARGET="main" >checkgrenadethrow</a><br>
+<A HREF="checkgrenadethrowpos.htm" TARGET="main" >checkgrenadethrowpos</a><br>
+<A HREF="checkprone.htm" TARGET="main" >checkprone</a><br>
+<A HREF="clearenemy.htm" TARGET="main" >clearenemy</a><br>
+<A HREF="clearentitytarget.htm" TARGET="main" >clearentitytarget</a><br>
+<A HREF="clearfixednodesafevolume.htm" TARGET="main" >clearfixednodesafevolume</a><br>
+<A HREF="cleargoalvolume.htm" TARGET="main" >cleargoalvolume</a><br>
+<A HREF="clearpitchorient.htm" TARGET="main" >clearpitchorient</a><br>
+<A HREF="clearpotentialthreat.htm" TARGET="main" >clearpotentialthreat</a><br>
+<A HREF="connectpaths.htm" TARGET="main" >connectpaths</a><br>
+<A HREF="disconnectpaths.htm" TARGET="main" >disconnectpaths</a><br>
+<A HREF="dropweapon.htm" TARGET="main" >dropweapon</a><br>
+<A HREF="dumphistory.htm" TARGET="main" >dumphistory</a><br>
+<A HREF="endprediction.htm" TARGET="main" >endprediction</a><br>
+<A HREF="enterprone.htm" TARGET="main" >enterprone</a><br>
+<A HREF="exitprone.htm" TARGET="main" >exitprone</a><br>
+<A HREF="findbestcovernode.htm" TARGET="main" >findbestcovernode</a><br>
+<A HREF="findcovernode.htm" TARGET="main" >findcovernode</a><br>
+<A HREF="findreacquiredirectpath.htm" TARGET="main" >findreacquiredirectpath</a><br>
+<A HREF="findreacquirenode.htm" TARGET="main" >findreacquirenode</a><br>
+<A HREF="findreacquireproximatepath.htm" TARGET="main" >findreacquireproximatepath</a><br>
+<A HREF="firegrenadelauncher.htm" TARGET="main" >firegrenadelauncher</a><br>
+<A HREF="flagenemyunattackable.htm" TARGET="main" >flagenemyunattackable</a><br>
+<A HREF="getanglestolikelyenemypath.htm" TARGET="main" >getanglestolikelyenemypath</a><br>
+<A HREF="getcovernode.htm" TARGET="main" >getcovernode</a><br>
+<A HREF="getfixednodesafevolume.htm" TARGET="main" >getfixednodesafevolume</a><br>
+<A HREF="getflashbangedstrength.htm" TARGET="main" >getflashbangedstrength</a><br>
+<A HREF="getgoalvolume.htm" TARGET="main" >getgoalvolume</a><br>
+<A HREF="getgroundenttype.htm" TARGET="main" >getgroundenttype</a><br>
+<A HREF="gethitenttype.htm" TARGET="main" >gethitenttype</a><br>
+<A HREF="gethityaw.htm" TARGET="main" >gethityaw</a><br>
+<A HREF="getmotionangle.htm" TARGET="main" >getmotionangle</a><br>
+<A HREF="getnegotiationendnode.htm" TARGET="main" >getnegotiationendnode</a><br>
+<A HREF="getnegotiationstartnode.htm" TARGET="main" >getnegotiationstartnode</a><br>
+<A HREF="getreacquirenode.htm" TARGET="main" >getreacquirenode</a><br>
+<A HREF="getturret.htm" TARGET="main" >getturret</a><br>
+<A HREF="isdeflected.htm" TARGET="main" >isdeflected</a><br>
+<A HREF="isingoal.htm" TARGET="main" >isingoal</a><br>
+<A HREF="isknownenemyinradius.htm" TARGET="main" >isknownenemyinradius</a><br>
+<A HREF="isknownenemyinvolume.htm" TARGET="main" >isknownenemyinvolume</a><br>
+<A HREF="ismovesuppressed.htm" TARGET="main" >ismovesuppressed</a><br>
+<A HREF="isnodeoccupied.htm" TARGET="main" >isnodeoccupied</a><br>
+<A HREF="ispathdirect.htm" TARGET="main" >ispathdirect</a><br>
+<A HREF="isstanceallowed.htm" TARGET="main" >isstanceallowed</a><br>
+<A HREF="issuppressed.htm" TARGET="main" >issuppressed</a><br>
+<A HREF="issuppressionwaiting.htm" TARGET="main" >issuppressionwaiting</a><br>
+<A HREF="isturretactive.htm" TARGET="main" >isturretactive</a><br>
+<A HREF="lerpposition.htm" TARGET="main" >lerpposition</a><br>
+<A HREF="makefakeai.htm" TARGET="main" >makefakeai</a><br>
+<A HREF="maymovefrompointtopoint.htm" TARGET="main" >maymovefrompointtopoint</a><br>
+<A HREF="maymovetopoint.htm" TARGET="main" >maymovetopoint</a><br>
+<A HREF="melee.htm" TARGET="main" >melee</a><br>
+<A HREF="nearnode.htm" TARGET="main" >nearnode</a><br>
+<A HREF="orientmode.htm" TARGET="main" >orientmode</a><br>
+<A HREF="pickupgrenade.htm" TARGET="main" >pickupgrenade</a><br>
+<A HREF="predictanims.htm" TARGET="main" >predictanims</a><br>
+<A HREF="predictoriginandangles.htm" TARGET="main" >predictoriginandangles</a><br>
+<A HREF="pushplayer.htm" TARGET="main" >pushplayer</a><br>
+<A HREF="reacquiremove.htm" TARGET="main" >reacquiremove</a><br>
+<A HREF="reacquirestep.htm" TARGET="main" >reacquirestep</a><br>
+<A HREF="scr_clearallcorpses.htm" TARGET="main" >scr_clearallcorpses</a><br>
+<A HREF="setaimanims.htm" TARGET="main" >setaimanims</a><br>
+<A HREF="setengagementmaxdist.htm" TARGET="main" >setengagementmaxdist</a><br>
+<A HREF="setengagementmindist.htm" TARGET="main" >setengagementmindist</a><br>
+<A HREF="setentitytarget.htm" TARGET="main" >setentitytarget</a><br>
+<A HREF="setfixednodesafevolume.htm" TARGET="main" >setfixednodesafevolume</a><br>
+<A HREF="setflashbanged.htm" TARGET="main" >setflashbanged</a><br>
+<A HREF="setflashbangimmunity.htm" TARGET="main" >setflashbangimmunity</a><br>
+<A HREF="setfriendlychain.htm" TARGET="main" >setfriendlychain</a><br>
+<A HREF="setgoalentity.htm" TARGET="main" >setgoalentity</a><br>
+<A HREF="setgoalnode.htm" TARGET="main" >setgoalnode</a><br>
+<A HREF="setgoalpos.htm" TARGET="main" >setgoalpos</a><br>
+<A HREF="setgoalvolume.htm" TARGET="main" >setgoalvolume</a><br>
+<A HREF="setlookat.htm" TARGET="main" >setlookat</a><br>
+<A HREF="setlookatanimnodes.htm" TARGET="main" >setlookatanimnodes</a><br>
+<A HREF="setlookatyawlimits.htm" TARGET="main" >setlookatyawlimits</a><br>
+<A HREF="setnodepriority.htm" TARGET="main" >setnodepriority</a><br>
+<A HREF="setpotentialthreat.htm" TARGET="main" >setpotentialthreat</a><br>
+<A HREF="setproneanimnodes.htm" TARGET="main" >setproneanimnodes</a><br>
+<A HREF="setruntopos.htm" TARGET="main" >setruntopos</a><br>
+<A HREF="settalktospecies.htm" TARGET="main" >settalktospecies</a><br>
+<A HREF="setturretanim.htm" TARGET="main" >setturretanim</a><br>
+<A HREF="setturretnode.htm" TARGET="main" >setturretnode</a><br>
+<A HREF="shoot.htm" TARGET="main" >shoot</a><br>
+<A HREF="shootblank.htm" TARGET="main" >shootblank</a><br>
+<A HREF="startcoverarrival.htm" TARGET="main" >startcoverarrival</a><br>
+<A HREF="startscriptedanim.htm" TARGET="main" >startscriptedanim</a><br>
+<A HREF="starttraversearrival.htm" TARGET="main" >starttraversearrival</a><br>
+<A HREF="stoplookat.htm" TARGET="main" >stoplookat</a><br>
+<A HREF="stopuseturret.htm" TARGET="main" >stopuseturret</a><br>
+<A HREF="teleport.htm" TARGET="main" >teleport</a><br>
+<A HREF="throwgrenade.htm" TARGET="main" >throwgrenade</a><br>
+<A HREF="trackscriptstate.htm" TARGET="main" >trackscriptstate</a><br>
+<A HREF="traversemode.htm" TARGET="main" >traversemode</a><br>
+<A HREF="trimpathtoattack.htm" TARGET="main" >trimpathtoattack</a><br>
+<A HREF="unsetturretnode.htm" TARGET="main" >unsetturretnode</a><br>
+<A HREF="updateplayersightaccuracy.htm" TARGET="main" >updateplayersightaccuracy</a><br>
+<A HREF="updateprone.htm" TARGET="main" >updateprone</a><br>
+<A HREF="usecovernode.htm" TARGET="main" >usecovernode</a><br>
+<A HREF="usereacquirenode.htm" TARGET="main" >usereacquirenode</a><br>
+<A HREF="useturret.htm" TARGET="main" >useturret</a><br>
+<A HREF="withinapproxpathdist.htm" TARGET="main" >withinapproxpathdist</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Animation'); return false;" title='Expand/Collapse Animation'>Animation</a><br></SPAN>
+<div id='Animation' CLASS='cmdlist'>
+<A HREF="animhasnotetrack.htm" TARGET="main" >animhasnotetrack</a><br>
+<A HREF="animrelative.htm" TARGET="main" >animrelative</a><br>
+<A HREF="animscripted.htm" TARGET="main" >animscripted</a><br>
+<A HREF="clearanim.htm" TARGET="main" >clearanim</a><br>
+<A HREF="dumpanims.htm" TARGET="main" >dumpanims</a><br>
+<A HREF="getangledelta.htm" TARGET="main" >getangledelta</a><br>
+<A HREF="getanimassettype.htm" TARGET="main" >getanimassettype</a><br>
+<A HREF="getanimlength.htm" TARGET="main" >getanimlength</a><br>
+<A HREF="getanimtime.htm" TARGET="main" >getanimtime</a><br>
+<A HREF="getcycleoriginoffset.htm" TARGET="main" >getcycleoriginoffset</a><br>
+<A HREF="getmovedelta.htm" TARGET="main" >getmovedelta</a><br>
+<A HREF="getnotetracktimes.htm" TARGET="main" >getnotetracktimes</a><br>
+<A HREF="getnumparts.htm" TARGET="main" >getnumparts</a><br>
+<A HREF="getpartname.htm" TARGET="main" >getpartname</a><br>
+<A HREF="getstartangles.htm" TARGET="main" >getstartangles</a><br>
+<A HREF="getstartorigin.htm" TARGET="main" >getstartorigin</a><br>
+<A HREF="gettagangles.htm" TARGET="main" >gettagangles</a><br>
+<A HREF="gettagorigin.htm" TARGET="main" >gettagorigin</a><br>
+<A HREF="setanim.htm" TARGET="main" >setanim</a><br>
+<A HREF="setanimknob.htm" TARGET="main" >setanimknob</a><br>
+<A HREF="setanimknoball.htm" TARGET="main" >setanimknoball</a><br>
+<A HREF="setanimknoballlimited.htm" TARGET="main" >setanimknoballlimited</a><br>
+<A HREF="setanimknoballlimitedrestart.htm" TARGET="main" >setanimknoballlimitedrestart</a><br>
+<A HREF="setanimknoballrestart.htm" TARGET="main" >setanimknoballrestart</a><br>
+<A HREF="setanimknoblimited.htm" TARGET="main" >setanimknoblimited</a><br>
+<A HREF="setanimknoblimitedrestart.htm" TARGET="main" >setanimknoblimitedrestart</a><br>
+<A HREF="setanimknobrestart.htm" TARGET="main" >setanimknobrestart</a><br>
+<A HREF="setanimlimited.htm" TARGET="main" >setanimlimited</a><br>
+<A HREF="setanimlimitedrestart.htm" TARGET="main" >setanimlimitedrestart</a><br>
+<A HREF="setanimrestart.htm" TARGET="main" >setanimrestart</a><br>
+<A HREF="setanimtime.htm" TARGET="main" >setanimtime</a><br>
+<A HREF="setflaggedanim.htm" TARGET="main" >setflaggedanim</a><br>
+<A HREF="setflaggedanimknob.htm" TARGET="main" >setflaggedanimknob</a><br>
+<A HREF="setflaggedanimknoball.htm" TARGET="main" >setflaggedanimknoball</a><br>
+<A HREF="setflaggedanimknoballrestart.htm" TARGET="main" >setflaggedanimknoballrestart</a><br>
+<A HREF="setflaggedanimknoblimited.htm" TARGET="main" >setflaggedanimknoblimited</a><br>
+<A HREF="setflaggedanimknoblimitedrestart.htm" TARGET="main" >setflaggedanimknoblimitedrestart</a><br>
+<A HREF="setflaggedanimknobrestart.htm" TARGET="main" >setflaggedanimknobrestart</a><br>
+<A HREF="setflaggedanimlimited.htm" TARGET="main" >setflaggedanimlimited</a><br>
+<A HREF="setflaggedanimlimitedrestart.htm" TARGET="main" >setflaggedanimlimitedrestart</a><br>
+<A HREF="setflaggedanimrestart.htm" TARGET="main" >setflaggedanimrestart</a><br>
+<A HREF="stopanimscripted.htm" TARGET="main" >stopanimscripted</a><br>
+<A HREF="stopuseanimtree.htm" TARGET="main" >stopuseanimtree</a><br>
+<A HREF="useanimtree.htm" TARGET="main" >useanimtree</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('BadPlaces'); return false;" title='Expand/Collapse BadPlaces'>BadPlaces</a><br></SPAN>
+<div id='BadPlaces' CLASS='cmdlist'>
+<A HREF="badplace_arc.htm" TARGET="main" >badplace_arc</a><br>
+<A HREF="badplace_brush.htm" TARGET="main" >badplace_brush</a><br>
+<A HREF="badplace_cylinder.htm" TARGET="main" >badplace_cylinder</a><br>
+<A HREF="badplace_delete.htm" TARGET="main" >badplace_delete</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Clans'); return false;" title='Expand/Collapse Clans'>Clans</a><br></SPAN>
+<div id='Clans' CLASS='cmdlist'>
+<A HREF="getclanid.htm" TARGET="main" >getclanid</a><br>
+<A HREF="getclanname.htm" TARGET="main" >getclanname</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Client'); return false;" title='Expand/Collapse Client'>Client</a><br></SPAN>
+<div id='Client' CLASS='cmdlist'>
+<A HREF="allclientsprint.htm" TARGET="main" >allclientsprint</a><br>
+<A HREF="allowspectateteam.htm" TARGET="main" >allowspectateteam</a><br>
+<A HREF="announcement.htm" TARGET="main" >announcement</a><br>
+<A HREF="ban.htm" TARGET="main" >ban</a><br>
+<A HREF="beginlocationselection.htm" TARGET="main" >beginlocationselection</a><br>
+<A HREF="clientannouncement.htm" TARGET="main" >clientannouncement</a><br>
+<A HREF="clientprint.htm" TARGET="main" >clientprint</a><br>
+<A HREF="cloneplayer.htm" TARGET="main" >cloneplayer</a><br>
+<A HREF="disableweapons.htm" TARGET="main" >disableweapons</a><br>
+<A HREF="dropitem.htm" TARGET="main" >dropitem</a><br>
+<A HREF="enableweapons.htm" TARGET="main" >enableweapons</a><br>
+<A HREF="endlocationselection.htm" TARGET="main" >endlocationselection</a><br>
+<A HREF="forceviewmodelanimation.htm" TARGET="main" >forceviewmodelanimation</a><br>
+<A HREF="getviewmodel.htm" TARGET="main" >getviewmodel</a><br>
+<A HREF="ismantling.htm" TARGET="main" >ismantling</a><br>
+<A HREF="isonladder.htm" TARGET="main" >isonladder</a><br>
+<A HREF="isplayernumber.htm" TARGET="main" >isplayernumber</a><br>
+<A HREF="isragdoll.htm" TARGET="main" >isragdoll</a><br>
+<A HREF="istalking.htm" TARGET="main" >istalking</a><br>
+<A HREF="kick.htm" TARGET="main" >kick</a><br>
+<A HREF="makedvarserverinfo.htm" TARGET="main" >makedvarserverinfo</a><br>
+<A HREF="nightvisionforceoff.htm" TARGET="main" >nightvisionforceoff</a><br>
+<A HREF="sayall.htm" TARGET="main" >sayall</a><br>
+<A HREF="sayteam.htm" TARGET="main" >sayteam</a><br>
+<A HREF="setrank.htm" TARGET="main" >setrank</a><br>
+<A HREF="setspawnweapon.htm" TARGET="main" >setspawnweapon</a><br>
+<A HREF="setteamfortrigger.htm" TARGET="main" >setteamfortrigger</a><br>
+<A HREF="showscoreboard.htm" TARGET="main" >showscoreboard</a><br>
+<A HREF="startragdoll.htm" TARGET="main" >startragdoll</a><br>
+<A HREF="suicide.htm" TARGET="main" >suicide</a><br>
+<A HREF="updatedmscores.htm" TARGET="main" >updatedmscores</a><br>
+<A HREF="updatescores.htm" TARGET="main" >updatescores</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Control'); return false;" title='Expand/Collapse Control'>Control</a><br></SPAN>
+<div id='Control' CLASS='cmdlist'>
+<A HREF="getcommandfromkey.htm" TARGET="main" >getcommandfromkey</a><br>
+<A HREF="getkeybinding.htm" TARGET="main" >getkeybinding</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Damage'); return false;" title='Expand/Collapse Damage'>Damage</a><br></SPAN>
+<div id='Damage' CLASS='cmdlist'>
+<A HREF="finishplayerdamage.htm" TARGET="main" >finishplayerdamage</a><br>
+<A HREF="radiusdamage.htm" TARGET="main" >radiusdamage</a><br>
+<A HREF="setcandamage.htm" TARGET="main" >setcandamage</a><br>
+<A HREF="setplayerignoreradiusdamage.htm" TARGET="main" >setplayerignoreradiusdamage</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Debug'); return false;" title='Expand/Collapse Debug'>Debug</a><br></SPAN>
+<div id='Debug' CLASS='cmdlist'>
+<A HREF="addtestclient.htm" TARGET="main" >addtestclient</a><br>
+<A HREF="assert.htm" TARGET="main" >assert</a><br>
+<A HREF="assertex.htm" TARGET="main" >assertex</a><br>
+<A HREF="assertmsg.htm" TARGET="main" >assertmsg</a><br>
+<A HREF="createprintchannel.htm" TARGET="main" >createprintchannel</a><br>
+<A HREF="getdebugeye.htm" TARGET="main" >getdebugeye</a><br>
+<A HREF="iprintln.htm" TARGET="main" >iprintln</a><br>
+<A HREF="iprintlnbold.htm" TARGET="main" >iprintlnbold</a><br>
+<A HREF="line.htm" TARGET="main" >line</a><br>
+<A HREF="print.htm" TARGET="main" >print</a><br>
+<A HREF="print3d.htm" TARGET="main" >print3d</a><br>
+<A HREF="println.htm" TARGET="main" >println</a><br>
+<A HREF="setdebugangles.htm" TARGET="main" >setdebugangles</a><br>
+<A HREF="setdebugorigin.htm" TARGET="main" >setdebugorigin</a><br>
+<A HREF="setprintchannel.htm" TARGET="main" >setprintchannel</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Dvars'); return false;" title='Expand/Collapse Dvars'>Dvars</a><br></SPAN>
+<div id='Dvars' CLASS='cmdlist'>
+<A HREF="getdebugdvar.htm" TARGET="main" >getdebugdvar</a><br>
+<A HREF="getdebugdvarfloat.htm" TARGET="main" >getdebugdvarfloat</a><br>
+<A HREF="getdebugdvarint.htm" TARGET="main" >getdebugdvarint</a><br>
+<A HREF="getdvar.htm" TARGET="main" >getdvar</a><br>
+<A HREF="getdvarfloat.htm" TARGET="main" >getdvarfloat</a><br>
+<A HREF="getdvarint.htm" TARGET="main" >getdvarint</a><br>
+<A HREF="setdvar.htm" TARGET="main" >setdvar</a><br>
+<A HREF="setsaveddvar.htm" TARGET="main" >setsaveddvar</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Effects'); return false;" title='Expand/Collapse Effects'>Effects</a><br></SPAN>
+<div id='Effects' CLASS='cmdlist'>
+<A HREF="getfxvisibility.htm" TARGET="main" >getfxvisibility</a><br>
+<A HREF="loadfx.htm" TARGET="main" >loadfx</a><br>
+<A HREF="playfx.htm" TARGET="main" >playfx</a><br>
+<A HREF="playfxontag.htm" TARGET="main" >playfxontag</a><br>
+<A HREF="playloopedfx.htm" TARGET="main" >playloopedfx</a><br>
+<A HREF="setblur.htm" TARGET="main" >setblur</a><br>
+<A HREF="setexpfog.htm" TARGET="main" >setexpfog</a><br>
+<A HREF="spawnfx.htm" TARGET="main" >spawnfx</a><br>
+<A HREF="triggerfx.htm" TARGET="main" >triggerfx</a><br>
+<A HREF="visionsetnaked.htm" TARGET="main" >visionsetnaked</a><br>
+<A HREF="visionsetnight.htm" TARGET="main" >visionsetnight</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Entity'); return false;" title='Expand/Collapse Entity'>Entity</a><br></SPAN>
+<div id='Entity' CLASS='cmdlist'>
+<A HREF="addaieventlistener.htm" TARGET="main" >addaieventlistener</a><br>
+<A HREF="attach.htm" TARGET="main" >attach</a><br>
+<A HREF="delete.htm" TARGET="main" >delete</a><br>
+<A HREF="detach.htm" TARGET="main" >detach</a><br>
+<A HREF="detachall.htm" TARGET="main" >detachall</a><br>
+<A HREF="detonate.htm" TARGET="main" >detonate</a><br>
+<A HREF="disableaimassist.htm" TARGET="main" >disableaimassist</a><br>
+<A HREF="dodamage.htm" TARGET="main" >dodamage</a><br>
+<A HREF="dontinterpolate.htm" TARGET="main" >dontinterpolate</a><br>
+<A HREF="enableaimassist.htm" TARGET="main" >enableaimassist</a><br>
+<A HREF="enablelinkto.htm" TARGET="main" >enablelinkto</a><br>
+<A HREF="entityradiusdamage.htm" TARGET="main" >entityradiusdamage</a><br>
+<A HREF="getattachignorecollision.htm" TARGET="main" >getattachignorecollision</a><br>
+<A HREF="getattachmodelname.htm" TARGET="main" >getattachmodelname</a><br>
+<A HREF="getattachsize.htm" TARGET="main" >getattachsize</a><br>
+<A HREF="getattachtagname.htm" TARGET="main" >getattachtagname</a><br>
+<A HREF="getcentroid.htm" TARGET="main" >getcentroid</a><br>
+<A HREF="getent.htm" TARGET="main" >getent</a><br>
+<A HREF="getentarray.htm" TARGET="main" >getentarray</a><br>
+<A HREF="getentbynum.htm" TARGET="main" >getentbynum</a><br>
+<A HREF="getentitynumber.htm" TARGET="main" >getentitynumber</a><br>
+<A HREF="getentnum.htm" TARGET="main" >getentnum</a><br>
+<A HREF="getlightcolor.htm" TARGET="main" >getlightcolor</a><br>
+<A HREF="getlightexponent.htm" TARGET="main" >getlightexponent</a><br>
+<A HREF="getlightfovinner.htm" TARGET="main" >getlightfovinner</a><br>
+<A HREF="getlightfovouter.htm" TARGET="main" >getlightfovouter</a><br>
+<A HREF="getlightintensity.htm" TARGET="main" >getlightintensity</a><br>
+<A HREF="getlightradius.htm" TARGET="main" >getlightradius</a><br>
+<A HREF="getnormalhealth.htm" TARGET="main" >getnormalhealth</a><br>
+<A HREF="getorigin.htm" TARGET="main" >getorigin</a><br>
+<A HREF="getshootatpos.htm" TARGET="main" >getshootatpos</a><br>
+<A HREF="hide.htm" TARGET="main" >hide</a><br>
+<A HREF="hidepart.htm" TARGET="main" >hidepart</a><br>
+<A HREF="istouching.htm" TARGET="main" >istouching</a><br>
+<A HREF="laseroff.htm" TARGET="main" >laseroff</a><br>
+<A HREF="laseron.htm" TARGET="main" >laseron</a><br>
+<A HREF="launch.htm" TARGET="main" >launch</a><br>
+<A HREF="linkto.htm" TARGET="main" >linkto</a><br>
+<A HREF="localtoworldcoords.htm" TARGET="main" >localtoworldcoords</a><br>
+<A HREF="locklightvis.htm" TARGET="main" >locklightvis</a><br>
+<A HREF="removeaieventlistener.htm" TARGET="main" >removeaieventlistener</a><br>
+<A HREF="setcontents.htm" TARGET="main" >setcontents</a><br>
+<A HREF="setcursorhint.htm" TARGET="main" >setcursorhint</a><br>
+<A HREF="sethintstring.htm" TARGET="main" >sethintstring</a><br>
+<A HREF="setlightcolor.htm" TARGET="main" >setlightcolor</a><br>
+<A HREF="setlightexponent.htm" TARGET="main" >setlightexponent</a><br>
+<A HREF="setlightfovrange.htm" TARGET="main" >setlightfovrange</a><br>
+<A HREF="setlightintensity.htm" TARGET="main" >setlightintensity</a><br>
+<A HREF="setlightradius.htm" TARGET="main" >setlightradius</a><br>
+<A HREF="setlookattext.htm" TARGET="main" >setlookattext</a><br>
+<A HREF="setmodel.htm" TARGET="main" >setmodel</a><br>
+<A HREF="setnormalhealth.htm" TARGET="main" >setnormalhealth</a><br>
+<A HREF="setshadowhint.htm" TARGET="main" >setshadowhint</a><br>
+<A HREF="setstablemissile.htm" TARGET="main" >setstablemissile</a><br>
+<A HREF="show.htm" TARGET="main" >show</a><br>
+<A HREF="showallparts.htm" TARGET="main" >showallparts</a><br>
+<A HREF="showpart.htm" TARGET="main" >showpart</a><br>
+<A HREF="showtoplayer.htm" TARGET="main" >showtoplayer</a><br>
+<A HREF="startignoringspotlight.htm" TARGET="main" >startignoringspotlight</a><br>
+<A HREF="stopignoringspotlight.htm" TARGET="main" >stopignoringspotlight</a><br>
+<A HREF="unlink.htm" TARGET="main" >unlink</a><br>
+<A HREF="unlocklightvis.htm" TARGET="main" >unlocklightvis</a><br>
+<A HREF="useby.htm" TARGET="main" >useby</a><br>
+<A HREF="usetriggerrequirelookat.htm" TARGET="main" >usetriggerrequirelookat</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('File'); return false;" title='Expand/Collapse File'>File</a><br></SPAN>
+<div id='File' CLASS='cmdlist'>
+<A HREF="closefile.htm" TARGET="main" >closefile</a><br>
+<A HREF="fgetarg.htm" TARGET="main" >fgetarg</a><br>
+<A HREF="fprintfields.htm" TARGET="main" >fprintfields</a><br>
+<A HREF="fprintln.htm" TARGET="main" >fprintln</a><br>
+<A HREF="freadln.htm" TARGET="main" >freadln</a><br>
+<A HREF="openfile.htm" TARGET="main" >openfile</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('HUD'); return false;" title='Expand/Collapse HUD'>HUD</a><br></SPAN>
+<div id='HUD' CLASS='cmdlist'>
+<A HREF="changefontscaleovertime.htm" TARGET="main" >changefontscaleovertime</a><br>
+<A HREF="clearalltextafterhudelem.htm" TARGET="main" >clearalltextafterhudelem</a><br>
+<A HREF="cleartargetent.htm" TARGET="main" >cleartargetent</a><br>
+<A HREF="destroy.htm" TARGET="main" >destroy</a><br>
+<A HREF="fadeovertime.htm" TARGET="main" >fadeovertime</a><br>
+<A HREF="moveovertime.htm" TARGET="main" >moveovertime</a><br>
+<A HREF="newclienthudelem.htm" TARGET="main" >newclienthudelem</a><br>
+<A HREF="newhudelem.htm" TARGET="main" >newhudelem</a><br>
+<A HREF="newteamhudelem.htm" TARGET="main" >newteamhudelem</a><br>
+<A HREF="obituary.htm" TARGET="main" >obituary</a><br>
+<A HREF="reset.htm" TARGET="main" >reset</a><br>
+<A HREF="scaleovertime.htm" TARGET="main" >scaleovertime</a><br>
+<A HREF="setclock.htm" TARGET="main" >setclock</a><br>
+<A HREF="setclockup.htm" TARGET="main" >setclockup</a><br>
+<A HREF="setgametypestring.htm" TARGET="main" >setgametypestring</a><br>
+<A HREF="setmapnamestring.htm" TARGET="main" >setmapnamestring</a><br>
+<A HREF="setplayernamestring.htm" TARGET="main" >setplayernamestring</a><br>
+<A HREF="setpulsefx.htm" TARGET="main" >setpulsefx</a><br>
+<A HREF="setshader.htm" TARGET="main" >setshader</a><br>
+<A HREF="settargetent.htm" TARGET="main" >settargetent</a><br>
+<A HREF="settenthstimer.htm" TARGET="main" >settenthstimer</a><br>
+<A HREF="settenthstimerup.htm" TARGET="main" >settenthstimerup</a><br>
+<A HREF="settext.htm" TARGET="main" >settext</a><br>
+<A HREF="settimer.htm" TARGET="main" >settimer</a><br>
+<A HREF="settimerup.htm" TARGET="main" >settimerup</a><br>
+<A HREF="setvalue.htm" TARGET="main" >setvalue</a><br>
+<A HREF="setwaypoint.htm" TARGET="main" >setwaypoint</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Level'); return false;" title='Expand/Collapse Level'>Level</a><br></SPAN>
+<div id='Level' CLASS='cmdlist'>
+<A HREF="changelevel.htm" TARGET="main" >changelevel</a><br>
+<A HREF="cinematic.htm" TARGET="main" >cinematic</a><br>
+<A HREF="cinematicingame.htm" TARGET="main" >cinematicingame</a><br>
+<A HREF="cinematicingameloop.htm" TARGET="main" >cinematicingameloop</a><br>
+<A HREF="cinematicingameloopfromfastfile.htm" TARGET="main" >cinematicingameloopfromfastfile</a><br>
+<A HREF="cinematicingameloopresident.htm" TARGET="main" >cinematicingameloopresident</a><br>
+<A HREF="cinematicingamesync.htm" TARGET="main" >cinematicingamesync</a><br>
+<A HREF="clearlocalizedstrings.htm" TARGET="main" >clearlocalizedstrings</a><br>
+<A HREF="drawcompassfriendlies.htm" TARGET="main" >drawcompassfriendlies</a><br>
+<A HREF="earthquake.htm" TARGET="main" >earthquake</a><br>
+<A HREF="exitlevel.htm" TARGET="main" >exitlevel</a><br>
+<A HREF="getallnodes.htm" TARGET="main" >getallnodes</a><br>
+<A HREF="getallvehiclenodes.htm" TARGET="main" >getallvehiclenodes</a><br>
+<A HREF="getarraykeys.htm" TARGET="main" >getarraykeys</a><br>
+<A HREF="getbrushmodelcenter.htm" TARGET="main" >getbrushmodelcenter</a><br>
+<A HREF="getdiffuculty.htm" TARGET="main" >getdiffuculty</a><br>
+<A HREF="getmapsundirection.htm" TARGET="main" >getmapsundirection</a><br>
+<A HREF="getmapsunlight.htm" TARGET="main" >getmapsunlight</a><br>
+<A HREF="getnode.htm" TARGET="main" >getnode</a><br>
+<A HREF="getnodearray.htm" TARGET="main" >getnodearray</a><br>
+<A HREF="getnorthyaw.htm" TARGET="main" >getnorthyaw</a><br>
+<A HREF="getnumvehicles.htm" TARGET="main" >getnumvehicles</a><br>
+<A HREF="getreflectionlocs.htm" TARGET="main" >getreflectionlocs</a><br>
+<A HREF="getstarttime.htm" TARGET="main" >getstarttime</a><br>
+<A HREF="gettime.htm" TARGET="main" >gettime</a><br>
+<A HREF="gettimescale.htm" TARGET="main" >gettimescale</a><br>
+<A HREF="getvehiclenode.htm" TARGET="main" >getvehiclenode</a><br>
+<A HREF="getvehiclenodearray.htm" TARGET="main" >getvehiclenodearray</a><br>
+<A HREF="iscinematicplaying.htm" TARGET="main" >iscinematicplaying</a><br>
+<A HREF="issplitscreen.htm" TARGET="main" >issplitscreen</a><br>
+<A HREF="isvalidgametype.htm" TARGET="main" >isvalidgametype</a><br>
+<A HREF="lerpsundirection.htm" TARGET="main" >lerpsundirection</a><br>
+<A HREF="map.htm" TARGET="main" >map</a><br>
+<A HREF="map_restart.htm" TARGET="main" >map_restart</a><br>
+<A HREF="mapexists.htm" TARGET="main" >mapexists</a><br>
+<A HREF="missionfailed.htm" TARGET="main" >missionfailed</a><br>
+<A HREF="missionsuccess.htm" TARGET="main" >missionsuccess</a><br>
+<A HREF="resetsundirection.htm" TARGET="main" >resetsundirection</a><br>
+<A HREF="resetsunlight.htm" TARGET="main" >resetsunlight</a><br>
+<A HREF="setclientnamemode.htm" TARGET="main" >setclientnamemode</a><br>
+<A HREF="setculldist.htm" TARGET="main" >setculldist</a><br>
+<A HREF="setgameendtime.htm" TARGET="main" >setgameendtime</a><br>
+<A HREF="setmapcenter.htm" TARGET="main" >setmapcenter</a><br>
+<A HREF="setminimap.htm" TARGET="main" >setminimap</a><br>
+<A HREF="setmissiondvar.htm" TARGET="main" >setmissiondvar</a><br>
+<A HREF="setsundirection.htm" TARGET="main" >setsundirection</a><br>
+<A HREF="setsunlight.htm" TARGET="main" >setsunlight</a><br>
+<A HREF="settimescale.htm" TARGET="main" >settimescale</a><br>
+<A HREF="setvotenocount.htm" TARGET="main" >setvotenocount</a><br>
+<A HREF="setvotestring.htm" TARGET="main" >setvotestring</a><br>
+<A HREF="setvotetime.htm" TARGET="main" >setvotetime</a><br>
+<A HREF="setvoteyescount.htm" TARGET="main" >setvoteyescount</a><br>
+<A HREF="setwinningplayer.htm" TARGET="main" >setwinningplayer</a><br>
+<A HREF="setwinningteam.htm" TARGET="main" >setwinningteam</a><br>
+<A HREF="stopcinematicingame.htm" TARGET="main" >stopcinematicingame</a><br>
+<A HREF="updateclientnames.htm" TARGET="main" >updateclientnames</a><br>
+<A HREF="worldentnumber.htm" TARGET="main" >worldentnumber</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Math'); return false;" title='Expand/Collapse Math'>Math</a><br></SPAN>
+<div id='Math' CLASS='cmdlist'>
+<A HREF="acos.htm" TARGET="main" >acos</a><br>
+<A HREF="asin.htm" TARGET="main" >asin</a><br>
+<A HREF="atan.htm" TARGET="main" >atan</a><br>
+<A HREF="cos.htm" TARGET="main" >cos</a><br>
+<A HREF="int.htm" TARGET="main" >int</a><br>
+<A HREF="pointonsegmentnearesttopoint.htm" TARGET="main" >pointonsegmentnearesttopoint</a><br>
+<A HREF="randomfloat.htm" TARGET="main" >randomfloat</a><br>
+<A HREF="randomfloatrange.htm" TARGET="main" >randomfloatrange</a><br>
+<A HREF="randomint.htm" TARGET="main" >randomint</a><br>
+<A HREF="randomintrange.htm" TARGET="main" >randomintrange</a><br>
+<A HREF="sin.htm" TARGET="main" >sin</a><br>
+<A HREF="tan.htm" TARGET="main" >tan</a><br>
+<A HREF="vectorfromlinetopoint.htm" TARGET="main" >vectorfromlinetopoint</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Menus'); return false;" title='Expand/Collapse Menus'>Menus</a><br></SPAN>
+<div id='Menus' CLASS='cmdlist'>
+<A HREF="closeingamemenu.htm" TARGET="main" >closeingamemenu</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Missile'); return false;" title='Expand/Collapse Missile'>Missile</a><br></SPAN>
+<div id='Missile' CLASS='cmdlist'>
+<A HREF="missile_createattractorent.htm" TARGET="main" >missile_createattractorent</a><br>
+<A HREF="missile_createattractororigin.htm" TARGET="main" >missile_createattractororigin</a><br>
+<A HREF="missile_createrepulsorent.htm" TARGET="main" >missile_createrepulsorent</a><br>
+<A HREF="missile_createrepulsororigin.htm" TARGET="main" >missile_createrepulsororigin</a><br>
+<A HREF="missile_deleteattractor.htm" TARGET="main" >missile_deleteattractor</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Motion'); return false;" title='Expand/Collapse Motion'>Motion</a><br></SPAN>
+<div id='Motion' CLASS='cmdlist'>
+<A HREF="devaddpitch.htm" TARGET="main" >devaddpitch</a><br>
+<A HREF="devaddroll.htm" TARGET="main" >devaddroll</a><br>
+<A HREF="devaddyaw.htm" TARGET="main" >devaddyaw</a><br>
+<A HREF="movegravity.htm" TARGET="main" >movegravity</a><br>
+<A HREF="moveto.htm" TARGET="main" >moveto</a><br>
+<A HREF="movex.htm" TARGET="main" >movex</a><br>
+<A HREF="movey.htm" TARGET="main" >movey</a><br>
+<A HREF="movez.htm" TARGET="main" >movez</a><br>
+<A HREF="notsolid.htm" TARGET="main" >notsolid</a><br>
+<A HREF="physicslaunch.htm" TARGET="main" >physicslaunch</a><br>
+<A HREF="rotatepitch.htm" TARGET="main" >rotatepitch</a><br>
+<A HREF="rotateroll.htm" TARGET="main" >rotateroll</a><br>
+<A HREF="rotateto.htm" TARGET="main" >rotateto</a><br>
+<A HREF="rotatevelocity.htm" TARGET="main" >rotatevelocity</a><br>
+<A HREF="rotateyaw.htm" TARGET="main" >rotateyaw</a><br>
+<A HREF="solid.htm" TARGET="main" >solid</a><br>
+<A HREF="vibrate.htm" TARGET="main" >vibrate</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Objective'); return false;" title='Expand/Collapse Objective'>Objective</a><br></SPAN>
+<div id='Objective' CLASS='cmdlist'>
+<A HREF="objective_add.htm" TARGET="main" >objective_add</a><br>
+<A HREF="objective_additionalcurrent.htm" TARGET="main" >objective_additionalcurrent</a><br>
+<A HREF="objective_additionalposition.htm" TARGET="main" >objective_additionalposition</a><br>
+<A HREF="objective_current.htm" TARGET="main" >objective_current</a><br>
+<A HREF="objective_delete.htm" TARGET="main" >objective_delete</a><br>
+<A HREF="objective_icon.htm" TARGET="main" >objective_icon</a><br>
+<A HREF="objective_onentity.htm" TARGET="main" >objective_onentity</a><br>
+<A HREF="objective_position.htm" TARGET="main" >objective_position</a><br>
+<A HREF="objective_ring.htm" TARGET="main" >objective_ring</a><br>
+<A HREF="objective_state.htm" TARGET="main" >objective_state</a><br>
+<A HREF="objective_string.htm" TARGET="main" >objective_string</a><br>
+<A HREF="objective_string_nomessage.htm" TARGET="main" >objective_string_nomessage</a><br>
+<A HREF="objective_team.htm" TARGET="main" >objective_team</a><br>
+<A HREF="pingplayer.htm" TARGET="main" >pingplayer</a><br>
+<A HREF="refreshhudammocounter.htm" TARGET="main" >refreshhudammocounter</a><br>
+<A HREF="refreshhudcompass.htm" TARGET="main" >refreshhudcompass</a><br>
+<A HREF="target_clearreticlelockon.htm" TARGET="main" >target_clearreticlelockon</a><br>
+<A HREF="target_getarray.htm" TARGET="main" >target_getarray</a><br>
+<A HREF="target_isincircle.htm" TARGET="main" >target_isincircle</a><br>
+<A HREF="target_isinrect.htm" TARGET="main" >target_isinrect</a><br>
+<A HREF="target_istarget.htm" TARGET="main" >target_istarget</a><br>
+<A HREF="target_remove.htm" TARGET="main" >target_remove</a><br>
+<A HREF="target_set.htm" TARGET="main" >target_set</a><br>
+<A HREF="target_setattackmode.htm" TARGET="main" >target_setattackmode</a><br>
+<A HREF="target_setjavelinonly.htm" TARGET="main" >target_setjavelinonly</a><br>
+<A HREF="target_setoffscreenshader.htm" TARGET="main" >target_setoffscreenshader</a><br>
+<A HREF="target_setshader.htm" TARGET="main" >target_setshader</a><br>
+<A HREF="target_startreticlelockon.htm" TARGET="main" >target_startreticlelockon</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Physics'); return false;" title='Expand/Collapse Physics'>Physics</a><br></SPAN>
+<div id='Physics' CLASS='cmdlist'>
+<A HREF="physicsexplosioncylinder.htm" TARGET="main" >physicsexplosioncylinder</a><br>
+<A HREF="physicsexplosionsphere.htm" TARGET="main" >physicsexplosionsphere</a><br>
+<A HREF="physicsjitter.htm" TARGET="main" >physicsjitter</a><br>
+<A HREF="physicsjolt.htm" TARGET="main" >physicsjolt</a><br>
+<A HREF="setphysicsgravitydir.htm" TARGET="main" >setphysicsgravitydir</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Player'); return false;" title='Expand/Collapse Player'>Player</a><br></SPAN>
+<div id='Player' CLASS='cmdlist'>
+<A HREF="adsbuttonpressed.htm" TARGET="main" >adsbuttonpressed</a><br>
+<A HREF="allowads.htm" TARGET="main" >allowads</a><br>
+<A HREF="allowcrouch.htm" TARGET="main" >allowcrouch</a><br>
+<A HREF="allowjump.htm" TARGET="main" >allowjump</a><br>
+<A HREF="allowlean.htm" TARGET="main" >allowlean</a><br>
+<A HREF="allowmelee.htm" TARGET="main" >allowmelee</a><br>
+<A HREF="allowprone.htm" TARGET="main" >allowprone</a><br>
+<A HREF="allowsprint.htm" TARGET="main" >allowsprint</a><br>
+<A HREF="allowstand.htm" TARGET="main" >allowstand</a><br>
+<A HREF="anyammoforweaponmodes.htm" TARGET="main" >anyammoforweaponmodes</a><br>
+<A HREF="attackbuttonpressed.htm" TARGET="main" >attackbuttonpressed</a><br>
+<A HREF="buttonpressed.htm" TARGET="main" >buttonpressed</a><br>
+<A HREF="clearperks.htm" TARGET="main" >clearperks</a><br>
+<A HREF="closemenu.htm" TARGET="main" >closemenu</a><br>
+<A HREF="deactivatechannelvolumes.htm" TARGET="main" >deactivatechannelvolumes</a><br>
+<A HREF="deactivateeq.htm" TARGET="main" >deactivateeq</a><br>
+<A HREF="deactivatereverb.htm" TARGET="main" >deactivatereverb</a><br>
+<A HREF="disableinvulnerability.htm" TARGET="main" >disableinvulnerability</a><br>
+<A HREF="disableturretdismount.htm" TARGET="main" >disableturretdismount</a><br>
+<A HREF="enablehealthshield.htm" TARGET="main" >enablehealthshield</a><br>
+<A HREF="enableinvulnerability.htm" TARGET="main" >enableinvulnerability</a><br>
+<A HREF="enableturretdismount.htm" TARGET="main" >enableturretdismount</a><br>
+<A HREF="fragbuttonpressed.htm" TARGET="main" >fragbuttonpressed</a><br>
+<A HREF="freezecontrols.htm" TARGET="main" >freezecontrols</a><br>
+<A HREF="getcurrentoffhand.htm" TARGET="main" >getcurrentoffhand</a><br>
+<A HREF="getcurrentweapon.htm" TARGET="main" >getcurrentweapon</a><br>
+<A HREF="getcurrentweaponclipammo.htm" TARGET="main" >getcurrentweaponclipammo</a><br>
+<A HREF="getfractionmaxammo.htm" TARGET="main" >getfractionmaxammo</a><br>
+<A HREF="getfractionstartammo.htm" TARGET="main" >getfractionstartammo</a><br>
+<A HREF="getnormalizedmovement.htm" TARGET="main" >getnormalizedmovement</a><br>
+<A HREF="getoffhandsecondaryclass.htm" TARGET="main" >getoffhandsecondaryclass</a><br>
+<A HREF="getplayerangles.htm" TARGET="main" >getplayerangles</a><br>
+<A HREF="getplayerviewheight.htm" TARGET="main" >getplayerviewheight</a><br>
+<A HREF="getstance.htm" TARGET="main" >getstance</a><br>
+<A HREF="getvelocity.htm" TARGET="main" >getvelocity</a><br>
+<A HREF="getweaponammoclip.htm" TARGET="main" >getweaponammoclip</a><br>
+<A HREF="getweaponammostock.htm" TARGET="main" >getweaponammostock</a><br>
+<A HREF="getweaponslist.htm" TARGET="main" >getweaponslist</a><br>
+<A HREF="getweaponslistprimaries.htm" TARGET="main" >getweaponslistprimaries</a><br>
+<A HREF="givemaxammo.htm" TARGET="main" >givemaxammo</a><br>
+<A HREF="givestartammo.htm" TARGET="main" >givestartammo</a><br>
+<A HREF="giveweapon.htm" TARGET="main" >giveweapon</a><br>
+<A HREF="hasperk.htm" TARGET="main" >hasperk</a><br>
+<A HREF="hasweapon.htm" TARGET="main" >hasweapon</a><br>
+<A HREF="hideviewmodel.htm" TARGET="main" >hideviewmodel</a><br>
+<A HREF="isfiring.htm" TARGET="main" >isfiring</a><br>
+<A HREF="islookingat.htm" TARGET="main" >islookingat</a><br>
+<A HREF="ismeleeing.htm" TARGET="main" >ismeleeing</a><br>
+<A HREF="isonground.htm" TARGET="main" >isonground</a><br>
+<A HREF="isthrowinggrenade.htm" TARGET="main" >isthrowinggrenade</a><br>
+<A HREF="meleebuttonpressed.htm" TARGET="main" >meleebuttonpressed</a><br>
+<A HREF="notifyoncommand.htm" TARGET="main" >notifyoncommand</a><br>
+<A HREF="openmenu.htm" TARGET="main" >openmenu</a><br>
+<A HREF="openmenunomouse.htm" TARGET="main" >openmenunomouse</a><br>
+<A HREF="playerads.htm" TARGET="main" >playerads</a><br>
+<A HREF="playerlinkto.htm" TARGET="main" >playerlinkto</a><br>
+<A HREF="playerlinktoabsolute.htm" TARGET="main" >playerlinktoabsolute</a><br>
+<A HREF="playerlinktodelta.htm" TARGET="main" >playerlinktodelta</a><br>
+<A HREF="playersetgroundreferenceent.htm" TARGET="main" >playersetgroundreferenceent</a><br>
+<A HREF="playlocalsound.htm" TARGET="main" >playlocalsound</a><br>
+<A HREF="resetspreadoverride.htm" TARGET="main" >resetspreadoverride</a><br>
+<A HREF="secondaryoffhandbuttonpressed.htm" TARGET="main" >secondaryoffhandbuttonpressed</a><br>
+<A HREF="setactionslot.htm" TARGET="main" >setactionslot</a><br>
+<A HREF="setautopickup.htm" TARGET="main" >setautopickup</a><br>
+<A HREF="setchannelvolumes.htm" TARGET="main" >setchannelvolumes</a><br>
+<A HREF="setclientdvar.htm" TARGET="main" >setclientdvar</a><br>
+<A HREF="setclientdvars.htm" TARGET="main" >setclientdvars</a><br>
+<A HREF="setdepthoffield.htm" TARGET="main" >setdepthoffield</a><br>
+<A HREF="seteq.htm" TARGET="main" >seteq</a><br>
+<A HREF="seteqlerp.htm" TARGET="main" >seteqlerp</a><br>
+<A HREF="setmovespeedscale.htm" TARGET="main" >setmovespeedscale</a><br>
+<A HREF="setoffhandsecondaryclass.htm" TARGET="main" >setoffhandsecondaryclass</a><br>
+<A HREF="setorigin.htm" TARGET="main" >setorigin</a><br>
+<A HREF="setperk.htm" TARGET="main" >setperk</a><br>
+<A HREF="setplayerangles.htm" TARGET="main" >setplayerangles</a><br>
+<A HREF="setreverb.htm" TARGET="main" >setreverb</a><br>
+<A HREF="setspreadoverride.htm" TARGET="main" >setspreadoverride</a><br>
+<A HREF="setstance.htm" TARGET="main" >setstance</a><br>
+<A HREF="setvelocity.htm" TARGET="main" >setvelocity</a><br>
+<A HREF="setviewmodel.htm" TARGET="main" >setviewmodel</a><br>
+<A HREF="setviewmodeldepthoffield.htm" TARGET="main" >setviewmodeldepthoffield</a><br>
+<A HREF="setweaponammoclip.htm" TARGET="main" >setweaponammoclip</a><br>
+<A HREF="setweaponammostock.htm" TARGET="main" >setweaponammostock</a><br>
+<A HREF="shellshock.htm" TARGET="main" >shellshock</a><br>
+<A HREF="showviewmodel.htm" TARGET="main" >showviewmodel</a><br>
+<A HREF="stoplocalsound.htm" TARGET="main" >stoplocalsound</a><br>
+<A HREF="stopshellshock.htm" TARGET="main" >stopshellshock</a><br>
+<A HREF="switchtooffhand.htm" TARGET="main" >switchtooffhand</a><br>
+<A HREF="switchtoweapon.htm" TARGET="main" >switchtoweapon</a><br>
+<A HREF="takeallweapons.htm" TARGET="main" >takeallweapons</a><br>
+<A HREF="takeweapon.htm" TARGET="main" >takeweapon</a><br>
+<A HREF="unsetperk.htm" TARGET="main" >unsetperk</a><br>
+<A HREF="uploadscore.htm" TARGET="main" >uploadscore</a><br>
+<A HREF="uploadtime.htm" TARGET="main" >uploadtime</a><br>
+<A HREF="usebuttonpressed.htm" TARGET="main" >usebuttonpressed</a><br>
+<A HREF="viewkick.htm" TARGET="main" >viewkick</a><br>
+<A HREF="weaponlockfinalize.htm" TARGET="main" >weaponlockfinalize</a><br>
+<A HREF="weaponlockfree.htm" TARGET="main" >weaponlockfree</a><br>
+<A HREF="weaponlocknoclearance.htm" TARGET="main" >weaponlocknoclearance</a><br>
+<A HREF="weaponlockstart.htm" TARGET="main" >weaponlockstart</a><br>
+<A HREF="weaponlocktargettooclose.htm" TARGET="main" >weaponlocktargettooclose</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Precache'); return false;" title='Expand/Collapse Precache'>Precache</a><br></SPAN>
+<div id='Precache' CLASS='cmdlist'>
+<A HREF="precacheheadicon.htm" TARGET="main" >precacheheadicon</a><br>
+<A HREF="precacheitem.htm" TARGET="main" >precacheitem</a><br>
+<A HREF="precachelocationselector.htm" TARGET="main" >precachelocationselector</a><br>
+<A HREF="precachemenu.htm" TARGET="main" >precachemenu</a><br>
+<A HREF="precachemodel.htm" TARGET="main" >precachemodel</a><br>
+<A HREF="precachenightvisioncodeassets.htm" TARGET="main" >precachenightvisioncodeassets</a><br>
+<A HREF="precacherumble.htm" TARGET="main" >precacherumble</a><br>
+<A HREF="precacheshader.htm" TARGET="main" >precacheshader</a><br>
+<A HREF="precacheshellshock.htm" TARGET="main" >precacheshellshock</a><br>
+<A HREF="precachestatusicon.htm" TARGET="main" >precachestatusicon</a><br>
+<A HREF="precachestring.htm" TARGET="main" >precachestring</a><br>
+<A HREF="precacheturret.htm" TARGET="main" >precacheturret</a><br>
+<A HREF="precachevehicle.htm" TARGET="main" >precachevehicle</a><br>
+<A HREF="scr_tablelookupistring.htm" TARGET="main" >scr_tablelookupistring</a><br>
+<A HREF="tablelookup.htm" TARGET="main" >tablelookup</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Rumble'); return false;" title='Expand/Collapse Rumble'>Rumble</a><br></SPAN>
+<div id='Rumble' CLASS='cmdlist'>
+<A HREF="playrumblelooponentity.htm" TARGET="main" >playrumblelooponentity</a><br>
+<A HREF="playrumblelooponposition.htm" TARGET="main" >playrumblelooponposition</a><br>
+<A HREF="playrumbleonentity.htm" TARGET="main" >playrumbleonentity</a><br>
+<A HREF="playrumbleonposition.htm" TARGET="main" >playrumbleonposition</a><br>
+<A HREF="stopallrumbles.htm" TARGET="main" >stopallrumbles</a><br>
+<A HREF="stoprumble.htm" TARGET="main" >stoprumble</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Save'); return false;" title='Expand/Collapse Save'>Save</a><br></SPAN>
+<div id='Save' CLASS='cmdlist'>
+<A HREF="commitsave.htm" TARGET="main" >commitsave</a><br>
+<A HREF="issaverecentlyloaded.htm" TARGET="main" >issaverecentlyloaded</a><br>
+<A HREF="issavesuccessful.htm" TARGET="main" >issavesuccessful</a><br>
+<A HREF="savegame.htm" TARGET="main" >savegame</a><br>
+<A HREF="savegamenocommit.htm" TARGET="main" >savegamenocommit</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Sentient'); return false;" title='Expand/Collapse Sentient'>Sentient</a><br></SPAN>
+<div id='Sentient' CLASS='cmdlist'>
+<A HREF="createthreatbiasgroup.htm" TARGET="main" >createthreatbiasgroup</a><br>
+<A HREF="getaiarray.htm" TARGET="main" >getaiarray</a><br>
+<A HREF="getaispeciesarray.htm" TARGET="main" >getaispeciesarray</a><br>
+<A HREF="getclosestenemysqdist.htm" TARGET="main" >getclosestenemysqdist</a><br>
+<A HREF="getenemysqdist.htm" TARGET="main" >getenemysqdist</a><br>
+<A HREF="geteye.htm" TARGET="main" >geteye</a><br>
+<A HREF="getthreatbias.htm" TARGET="main" >getthreatbias</a><br>
+<A HREF="getthreatbiasgroup.htm" TARGET="main" >getthreatbiasgroup</a><br>
+<A HREF="isai.htm" TARGET="main" >isai</a><br>
+<A HREF="isalive.htm" TARGET="main" >isalive</a><br>
+<A HREF="isgodmode.htm" TARGET="main" >isgodmode</a><br>
+<A HREF="isplayer.htm" TARGET="main" >isplayer</a><br>
+<A HREF="issentient.htm" TARGET="main" >issentient</a><br>
+<A HREF="setignoremegroup.htm" TARGET="main" >setignoremegroup</a><br>
+<A HREF="setthreatbias.htm" TARGET="main" >setthreatbias</a><br>
+<A HREF="setthreatbiasagainstall.htm" TARGET="main" >setthreatbiasagainstall</a><br>
+<A HREF="setthreatbiasgroup.htm" TARGET="main" >setthreatbiasgroup</a><br>
+<A HREF="threatbiasgroupexists.htm" TARGET="main" >threatbiasgroupexists</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Sound'); return false;" title='Expand/Collapse Sound'>Sound</a><br></SPAN>
+<div id='Sound' CLASS='cmdlist'>
+<A HREF="ambientplay.htm" TARGET="main" >ambientplay</a><br>
+<A HREF="ambientstop.htm" TARGET="main" >ambientstop</a><br>
+<A HREF="amplify.htm" TARGET="main" >amplify</a><br>
+<A HREF="amplifystop.htm" TARGET="main" >amplifystop</a><br>
+<A HREF="eqoff.htm" TARGET="main" >eqoff</a><br>
+<A HREF="eqon.htm" TARGET="main" >eqon</a><br>
+<A HREF="haseq.htm" TARGET="main" >haseq</a><br>
+<A HREF="iswaitingonsound.htm" TARGET="main" >iswaitingonsound</a><br>
+<A HREF="musicplay.htm" TARGET="main" >musicplay</a><br>
+<A HREF="musicstop.htm" TARGET="main" >musicstop</a><br>
+<A HREF="playloopsound.htm" TARGET="main" >playloopsound</a><br>
+<A HREF="playsound.htm" TARGET="main" >playsound</a><br>
+<A HREF="playsoundasmaster.htm" TARGET="main" >playsoundasmaster</a><br>
+<A HREF="playsoundtoplayer.htm" TARGET="main" >playsoundtoplayer</a><br>
+<A HREF="playsoundtoteam.htm" TARGET="main" >playsoundtoteam</a><br>
+<A HREF="setsoundblend.htm" TARGET="main" >setsoundblend</a><br>
+<A HREF="soundexists.htm" TARGET="main" >soundexists</a><br>
+<A HREF="soundfade.htm" TARGET="main" >soundfade</a><br>
+<A HREF="stoploopsound.htm" TARGET="main" >stoploopsound</a><br>
+<A HREF="stopsounds.htm" TARGET="main" >stopsounds</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Spawn'); return false;" title='Expand/Collapse Spawn'>Spawn</a><br></SPAN>
+<div id='Spawn' CLASS='cmdlist'>
+<A HREF="canspawnturret.htm" TARGET="main" >canspawnturret</a><br>
+<A HREF="dospawn.htm" TARGET="main" >dospawn</a><br>
+<A HREF="getspawnerarray.htm" TARGET="main" >getspawnerarray</a><br>
+<A HREF="getspawnerteamarray.htm" TARGET="main" >getspawnerteamarray</a><br>
+<A HREF="placespawnpoint.htm" TARGET="main" >placespawnpoint</a><br>
+<A HREF="positionwouldtelefrag.htm" TARGET="main" >positionwouldtelefrag</a><br>
+<A HREF="setspawnerteam.htm" TARGET="main" >setspawnerteam</a><br>
+<A HREF="spawn.htm" TARGET="main" >spawn</a><br>
+<A HREF="spawnstruct.htm" TARGET="main" >spawnstruct</a><br>
+<A HREF="spawnturret.htm" TARGET="main" >spawnturret</a><br>
+<A HREF="spawnvehicle.htm" TARGET="main" >spawnvehicle</a><br>
+<A HREF="stalingradspawn.htm" TARGET="main" >stalingradspawn</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('String'); return false;" title='Expand/Collapse String'>String</a><br></SPAN>
+<div id='String' CLASS='cmdlist'>
+<A HREF="getsubstr.htm" TARGET="main" >getsubstr</a><br>
+<A HREF="issubstr.htm" TARGET="main" >issubstr</a><br>
+<A HREF="strtok.htm" TARGET="main" >strtok</a><br>
+<A HREF="tolower.htm" TARGET="main" >tolower</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('System'); return false;" title='Expand/Collapse System'>System</a><br></SPAN>
+<div id='System' CLASS='cmdlist'>
+<A HREF="logprint.htm" TARGET="main" >logprint</a><br>
+<A HREF="resettimeout.htm" TARGET="main" >resettimeout</a><br>
+<A HREF="setarchive.htm" TARGET="main" >setarchive</a><br>
+<A HREF="updategamerprofile.htm" TARGET="main" >updategamerprofile</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Teams'); return false;" title='Expand/Collapse Teams'>Teams</a><br></SPAN>
+<div id='Teams' CLASS='cmdlist'>
+<A HREF="getassignedteam.htm" TARGET="main" >getassignedteam</a><br>
+<A HREF="getteamplayersalive.htm" TARGET="main" >getteamplayersalive</a><br>
+<A HREF="getteamradar.htm" TARGET="main" >getteamradar</a><br>
+<A HREF="getteamscore.htm" TARGET="main" >getteamscore</a><br>
+<A HREF="setteamradar.htm" TARGET="main" >setteamradar</a><br>
+<A HREF="setteamscore.htm" TARGET="main" >setteamscore</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Trace'); return false;" title='Expand/Collapse Trace'>Trace</a><br></SPAN>
+<div id='Trace' CLASS='cmdlist'>
+<A HREF="bullettrace.htm" TARGET="main" >bullettrace</a><br>
+<A HREF="bullettracepassed.htm" TARGET="main" >bullettracepassed</a><br>
+<A HREF="damageconetrace.htm" TARGET="main" >damageconetrace</a><br>
+<A HREF="physicstrace.htm" TARGET="main" >physicstrace</a><br>
+<A HREF="playerphysicstrace.htm" TARGET="main" >playerphysicstrace</a><br>
+<A HREF="sightconetrace.htm" TARGET="main" >sightconetrace</a><br>
+<A HREF="sighttracepassed.htm" TARGET="main" >sighttracepassed</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Triggers'); return false;" title='Expand/Collapse Triggers'>Triggers</a><br></SPAN>
+<div id='Triggers' CLASS='cmdlist'>
+<A HREF="clientclaimtrigger.htm" TARGET="main" >clientclaimtrigger</a><br>
+<A HREF="clientreleasetrigger.htm" TARGET="main" >clientreleasetrigger</a><br>
+<A HREF="releaseclaimedtrigger.htm" TARGET="main" >releaseclaimedtrigger</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Turret'); return false;" title='Expand/Collapse Turret'>Turret</a><br></SPAN>
+<div id='Turret' CLASS='cmdlist'>
+<A HREF="cleartargetentity.htm" TARGET="main" >cleartargetentity</a><br>
+<A HREF="getturretowner.htm" TARGET="main" >getturretowner</a><br>
+<A HREF="getturrettarget.htm" TARGET="main" >getturrettarget</a><br>
+<A HREF="isfiringturret.htm" TARGET="main" >isfiringturret</a><br>
+<A HREF="maketurretunusable.htm" TARGET="main" >maketurretunusable</a><br>
+<A HREF="maketurretusable.htm" TARGET="main" >maketurretusable</a><br>
+<A HREF="restoredefaultdroppitch.htm" TARGET="main" >restoredefaultdroppitch</a><br>
+<A HREF="setaispread.htm" TARGET="main" >setaispread</a><br>
+<A HREF="setbottomarc.htm" TARGET="main" >setbottomarc</a><br>
+<A HREF="setconvergencetime.htm" TARGET="main" >setconvergencetime</a><br>
+<A HREF="setdefaultdroppitch.htm" TARGET="main" >setdefaultdroppitch</a><br>
+<A HREF="setleftarc.htm" TARGET="main" >setleftarc</a><br>
+<A HREF="setmode.htm" TARGET="main" >setmode</a><br>
+<A HREF="setplayerspread.htm" TARGET="main" >setplayerspread</a><br>
+<A HREF="setrightarc.htm" TARGET="main" >setrightarc</a><br>
+<A HREF="setsuppressiontime.htm" TARGET="main" >setsuppressiontime</a><br>
+<A HREF="settargetentity.htm" TARGET="main" >settargetentity</a><br>
+<A HREF="settoparc.htm" TARGET="main" >settoparc</a><br>
+<A HREF="setturretignoregoals.htm" TARGET="main" >setturretignoregoals</a><br>
+<A HREF="setturretteam.htm" TARGET="main" >setturretteam</a><br>
+<A HREF="shootturret.htm" TARGET="main" >shootturret</a><br>
+<A HREF="startfiring.htm" TARGET="main" >startfiring</a><br>
+<A HREF="stopfiring.htm" TARGET="main" >stopfiring</a><br>
+<A HREF="turretfiredisable.htm" TARGET="main" >turretfiredisable</a><br>
+<A HREF="turretfireenable.htm" TARGET="main" >turretfireenable</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Variables'); return false;" title='Expand/Collapse Variables'>Variables</a><br></SPAN>
+<div id='Variables' CLASS='cmdlist'>
+<A HREF="isarray.htm" TARGET="main" >isarray</a><br>
+<A HREF="isdefined.htm" TARGET="main" >isdefined</a><br>
+<A HREF="isstring.htm" TARGET="main" >isstring</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Vector'); return false;" title='Expand/Collapse Vector'>Vector</a><br></SPAN>
+<div id='Vector' CLASS='cmdlist'>
+<A HREF="anglestoforward.htm" TARGET="main" >anglestoforward</a><br>
+<A HREF="anglestoright.htm" TARGET="main" >anglestoright</a><br>
+<A HREF="anglestoup.htm" TARGET="main" >anglestoup</a><br>
+<A HREF="closer.htm" TARGET="main" >closer</a><br>
+<A HREF="combineangles.htm" TARGET="main" >combineangles</a><br>
+<A HREF="distance.htm" TARGET="main" >distance</a><br>
+<A HREF="distance2d.htm" TARGET="main" >distance2d</a><br>
+<A HREF="distancesquared.htm" TARGET="main" >distancesquared</a><br>
+<A HREF="length.htm" TARGET="main" >length</a><br>
+<A HREF="lengthsquared.htm" TARGET="main" >lengthsquared</a><br>
+<A HREF="vectordot.htm" TARGET="main" >vectordot</a><br>
+<A HREF="vectorlerp.htm" TARGET="main" >vectorlerp</a><br>
+<A HREF="vectornormalize.htm" TARGET="main" >vectornormalize</a><br>
+<A HREF="vectortoangles.htm" TARGET="main" >vectortoangles</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Vehicles'); return false;" title='Expand/Collapse Vehicles'>Vehicles</a><br></SPAN>
+<div id='Vehicles' CLASS='cmdlist'>
+<A HREF="addvehicletocompass.htm" TARGET="main" >addvehicletocompass</a><br>
+<A HREF="attachpath.htm" TARGET="main" >attachpath</a><br>
+<A HREF="cleargoalyaw.htm" TARGET="main" >cleargoalyaw</a><br>
+<A HREF="clearlookatent.htm" TARGET="main" >clearlookatent</a><br>
+<A HREF="cleartargetyaw.htm" TARGET="main" >cleartargetyaw</a><br>
+<A HREF="clearturrettarget.htm" TARGET="main" >clearturrettarget</a><br>
+<A HREF="fireweapon.htm" TARGET="main" >fireweapon</a><br>
+<A HREF="freevehicle.htm" TARGET="main" >freevehicle</a><br>
+<A HREF="getattachpos.htm" TARGET="main" >getattachpos</a><br>
+<A HREF="getenginevolume.htm" TARGET="main" >getenginevolume</a><br>
+<A HREF="getgoalspeedmph.htm" TARGET="main" >getgoalspeedmph</a><br>
+<A HREF="getspeed.htm" TARGET="main" >getspeed</a><br>
+<A HREF="getspeedmph.htm" TARGET="main" >getspeedmph</a><br>
+<A HREF="getvehicleowner.htm" TARGET="main" >getvehicleowner</a><br>
+<A HREF="getwheelsurface.htm" TARGET="main" >getwheelsurface</a><br>
+<A HREF="isturretready.htm" TARGET="main" >isturretready</a><br>
+<A HREF="joltbody.htm" TARGET="main" >joltbody</a><br>
+<A HREF="makevehicleunusable.htm" TARGET="main" >makevehicleunusable</a><br>
+<A HREF="makevehicleusable.htm" TARGET="main" >makevehicleusable</a><br>
+<A HREF="removevehiclefromcompass.htm" TARGET="main" >removevehiclefromcompass</a><br>
+<A HREF="resumespeed.htm" TARGET="main" >resumespeed</a><br>
+<A HREF="returnplayercontrol.htm" TARGET="main" >returnplayercontrol</a><br>
+<A HREF="setacceleration.htm" TARGET="main" >setacceleration</a><br>
+<A HREF="setairresistance.htm" TARGET="main" >setairresistance</a><br>
+<A HREF="setdeceleration.htm" TARGET="main" >setdeceleration</a><br>
+<A HREF="setenginevolume.htm" TARGET="main" >setenginevolume</a><br>
+<A HREF="setgoalyaw.htm" TARGET="main" >setgoalyaw</a><br>
+<A HREF="sethoverparams.htm" TARGET="main" >sethoverparams</a><br>
+<A HREF="setjitterparams.htm" TARGET="main" >setjitterparams</a><br>
+<A HREF="setlookatent.htm" TARGET="main" >setlookatent</a><br>
+<A HREF="setmaxpitchroll.htm" TARGET="main" >setmaxpitchroll</a><br>
+<A HREF="setneargoalnotifydist.htm" TARGET="main" >setneargoalnotifydist</a><br>
+<A HREF="setspeed.htm" TARGET="main" >setspeed</a><br>
+<A HREF="setspeedimmediate.htm" TARGET="main" >setspeedimmediate</a><br>
+<A HREF="setswitchnode.htm" TARGET="main" >setswitchnode</a><br>
+<A HREF="settargetyaw.htm" TARGET="main" >settargetyaw</a><br>
+<A HREF="setturningability.htm" TARGET="main" >setturningability</a><br>
+<A HREF="setturrettargetent.htm" TARGET="main" >setturrettargetent</a><br>
+<A HREF="setturrettargetvec.htm" TARGET="main" >setturrettargetvec</a><br>
+<A HREF="setvehgoalpos.htm" TARGET="main" >setvehgoalpos</a><br>
+<A HREF="setvehiclelookattext.htm" TARGET="main" >setvehiclelookattext</a><br>
+<A HREF="setvehicleteam.htm" TARGET="main" >setvehicleteam</a><br>
+<A HREF="setvehweapon.htm" TARGET="main" >setvehweapon</a><br>
+<A HREF="setwaitnode.htm" TARGET="main" >setwaitnode</a><br>
+<A HREF="setwaitspeed.htm" TARGET="main" >setwaitspeed</a><br>
+<A HREF="setyawspeed.htm" TARGET="main" >setyawspeed</a><br>
+<A HREF="startenginesound.htm" TARGET="main" >startenginesound</a><br>
+<A HREF="startpath.htm" TARGET="main" >startpath</a><br>
+<A HREF="stopenginesound.htm" TARGET="main" >stopenginesound</a><br>
+<A HREF="vehforcematerialspeed.htm" TARGET="main" >vehforcematerialspeed</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('Weapons'); return false;" title='Expand/Collapse Weapons'>Weapons</a><br></SPAN>
+<div id='Weapons' CLASS='cmdlist'>
+<A HREF="bulletspread.htm" TARGET="main" >bulletspread</a><br>
+<A HREF="bullettracer.htm" TARGET="main" >bullettracer</a><br>
+<A HREF="disablegrenadetouchdamage.htm" TARGET="main" >disablegrenadetouchdamage</a><br>
+<A HREF="enablegrenadetouchdamage.htm" TARGET="main" >enablegrenadetouchdamage</a><br>
+<A HREF="getammocount.htm" TARGET="main" >getammocount</a><br>
+<A HREF="getweaponclipmodel.htm" TARGET="main" >getweaponclipmodel</a><br>
+<A HREF="getweaponmodel.htm" TARGET="main" >getweaponmodel</a><br>
+<A HREF="isweaponcliponly.htm" TARGET="main" >isweaponcliponly</a><br>
+<A HREF="isweapondetonationtimed.htm" TARGET="main" >isweapondetonationtimed</a><br>
+<A HREF="itemweaponsetammo.htm" TARGET="main" >itemweaponsetammo</a><br>
+<A HREF="magicbullet.htm" TARGET="main" >magicbullet</a><br>
+<A HREF="magicgrenade.htm" TARGET="main" >magicgrenade</a><br>
+<A HREF="magicgrenademanual.htm" TARGET="main" >magicgrenademanual</a><br>
+<A HREF="missile_settarget.htm" TARGET="main" >missile_settarget</a><br>
+<A HREF="weaponaltweaponname.htm" TARGET="main" >weaponaltweaponname</a><br>
+<A HREF="weaponclass.htm" TARGET="main" >weaponclass</a><br>
+<A HREF="weaponclipsize.htm" TARGET="main" >weaponclipsize</a><br>
+<A HREF="weaponfightdist.htm" TARGET="main" >weaponfightdist</a><br>
+<A HREF="weaponfiretime.htm" TARGET="main" >weaponfiretime</a><br>
+<A HREF="weaponinventorytype.htm" TARGET="main" >weaponinventorytype</a><br>
+<A HREF="weaponisboltaction.htm" TARGET="main" >weaponisboltaction</a><br>
+<A HREF="weaponissemiauto.htm" TARGET="main" >weaponissemiauto</a><br>
+<A HREF="weaponmaxammo.htm" TARGET="main" >weaponmaxammo</a><br>
+<A HREF="weaponmaxdist.htm" TARGET="main" >weaponmaxdist</a><br>
+<A HREF="weaponstartammo.htm" TARGET="main" >weaponstartammo</a><br>
+<A HREF="weapontype.htm" TARGET="main" >weapontype</a><br>
+</div>
+</BODY></HTML>
