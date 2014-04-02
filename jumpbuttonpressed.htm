@@ -15,12 +15,11 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>SetVelocity( &lt;player velocity&gt; )</H1>
+<H1>jumpButtonPressed()</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
-Module: Player<BR>
-SP Only<BR>
+Module: libcod<BR>
 </I>
 
 <BR>
@@ -28,7 +27,7 @@ SP Only<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Set the player's velocity</p>
+<p>Gets if the jump button is pressed</p>
 
 </H3>
 </TR></TD></TABLE>
@@ -46,17 +45,10 @@ The player
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
- level.player SetVelocity( (-400, 0, 100) );
+ if ( self jumpButtonPressed() ) ...
 </PRE>
 </H3>
 </TR></TD></TABLE>
-<BR><BR>
-<H2>Required Args:</H2>
-<TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
-<TR><TD BGCOLOR="C0D4EE">
-<UL>
-<LI>1 : &lt;player velocity&gt; The player's velocity (a vector)</LI>
-</UL></TR></TD></TABLE>
 <BR>
 </BODY>
 </HTML>
