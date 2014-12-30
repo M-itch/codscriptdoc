@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+</HEAD>
+
+<style type="text/css">
+<!--
+H1  { padding: 0; margin: 0; font-size: 16pt; font-weight:bold; font-family:courier new; }
+H2  { padding: 0; margin: 4; }
+H3  { padding: 0; margin: 4; font-size: 13pt; font-weight:normal; }
+P   { padding: 0; margin: 4; }
+PRE { padding: 0; margin: 4; font-size: 10pt; font-weight:normal; color:#EEEEEE; }
+TD  { padding: 4; margin: 0; }
+UL  { margin-bottom:0; }
+-->
+</style>
+
+<HR>
+<H1>sprintf( &lt;format&gt;, &lt;additional_arguments&gt; )</H1>
+<HR>
+<BODY BGCOLOR='B0C4DE'>
+<I>
+Module: libcod<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+<p>Composes a string with the same text that would be printed if format was used on printf.<br />
+See <a href="http://www.cplusplus.com/reference/cstdio/sprintf/" target="_blank">http://www.cplusplus.com/reference/cstdio/sprintf/</a>.<br />
+Exception: no buffer/stringpointer is required for sprintf, returns the string to stack instead.</p>
+</H3>
+</TR></TD></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
+<TR><TD BGCOLOR="222222">
+<H3>
+<PRE>
+ text = sprintf("Hello %s!", "COD");
+</PRE>
+</H3>
+</TR></TD></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;format&gt; string that contains a format string that follows the same specifications as format in <a href="http://www.cplusplus.com/printf" target="_blank">printf</a>.</LI>
+<LI>2 : &lt;additional_arguments&gt; Depending on the format string, the function may expect a sequence of additional arguments, each containing a value to be used to replace a format specifier in the format string.<br />
+There should be at least as many of these arguments as the number of values specified in the format specifiers. Additional arguments are ignored by the function.</LI>
+</UL></TR></TD></TABLE>
+<BR>
+</BODY>
+</HTML>
