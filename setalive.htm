@@ -27,7 +27,7 @@ Module: libcod<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Sets if the player is alive</p>
+<p>Enables damage feedback for non-player entities.</p>
 
 </H3>
 </TR></TD></TABLE>
@@ -36,7 +36,7 @@ Module: libcod<BR>
 <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-The player
+An entity
 </H3>
 </TR></TD></TABLE>
 <BR><BR>
@@ -46,6 +46,7 @@ The player
 <H3>
 <PRE>
  self setAlive(1);
+ self waittill("damage", dmg);
 </PRE>
 </H3>
 </TR></TD></TABLE>

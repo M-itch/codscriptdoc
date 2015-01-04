@@ -15,7 +15,7 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>mysql_free_result( &lt;mysql&gt;, &lt;text&gt; )</H1>
+<H1>mysql_real_escape_string( &lt;mysql&gt;, &lt;text&gt; )</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
@@ -27,7 +27,7 @@ Module: libcod<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Creates a legal SQL string that you can use in an SQL statement.</p>
+<p>Escapes special characters in a string for use in an SQL statement.</p>
 
 </H3>
 </TR></TD></TABLE>
@@ -37,7 +37,7 @@ Module: libcod<BR>
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
-escapedtext = mysql_real_escape_string( mysql, "SELECT * FROM table WHERE name = 'name' OR '1' = '1'" );
+escapedtext = mysql_real_escape_string( mysql, self.name );
 </PRE>
 </H3>
 </TR></TD></TABLE>
