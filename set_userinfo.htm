@@ -15,7 +15,7 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>mysql_async_create_query_nosave( &lt;query&gt; )</H1>
+<H1>set_userinfo( &lt;key&gt;, &lt;value&gt; )</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
@@ -27,9 +27,16 @@ Module: libcod<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Adds a mysql query to the async query handler queue. Will not return anything and the result will not be stored. Will return a referencing ID which is 32-bit signed.<br />
-Returns undefined if not called correctly.<br />
-Should be used with the wrapper functions for async mysql. [<a href="http://killtube.org/showthread.php?1869-Script-documentation&p=11102&viewfull=1#post11102" target="_blank">source</a>]</p>
+<p>Sets the key and value in the player's userinfo string.</p>
+
+</H3>
+</TR></TD></TABLE>
+<BR><BR>
+<H2>Call this on:</H2>
+<TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+The player
 </H3>
 </TR></TD></TABLE>
 <BR><BR>
@@ -38,7 +45,7 @@ Should be used with the wrapper functions for async mysql. [<a href="http://kill
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
- async_id = mysql_async_create_query("INSERT value INTO table");
+ player set_userinfo( "name", "KILLTUBE" );
 </PRE>
 </H3>
 </TR></TD></TABLE>
@@ -47,7 +54,8 @@ Should be used with the wrapper functions for async mysql. [<a href="http://kill
 <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
 <TR><TD BGCOLOR="C0D4EE">
 <UL>
-<LI>1 : &lt;query&gt; SQL statement</LI>
+<LI>1 : &lt;key&gt; The key</LI>
+<LI>2 : &lt;value&gt; New value</LI>
 </UL></TR></TD></TABLE>
 <BR>
 </BODY>
