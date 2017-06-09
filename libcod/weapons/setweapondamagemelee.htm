@@ -15,11 +15,11 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>sendGameServerCommand( &lt;clientnum&gt;, &lt;command&gt; )</H1>
+<H1>setWeaponDamageMelee( &lt;id&gt;, &lt;dmg&gt; )</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
-Module: Utils<BR>
+Module: Weapons<BR>
 </I>
 
 <BR>
@@ -27,7 +27,8 @@ Module: Utils<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Sends a game server command to the client.</p>
+<p>Set new malee damage to weapon</p>
+
 </H3>
 </TR></TD></TABLE>
 <BR><BR>
@@ -36,7 +37,7 @@ Module: Utils<BR>
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
- sendgameservercommand(player getentitynumber(), "h \"console: " + message + "\"");
+setWeaponDamageMelee(id, dmg);
 </PRE>
 </H3>
 </TR></TD></TABLE>
@@ -45,8 +46,8 @@ Module: Utils<BR>
 <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
 <TR><TD BGCOLOR="C0D4EE">
 <UL>
-<LI>1 : &lt;clientnum&gt; The client number of the player.</LI>
-<LI>2 : &lt;command&gt; The game server message.</LI>
+<LI>1 : &lt;id&gt; Weapon id. You can get it with <a href="getloadedweapons.htm">getLoadedWeapons()</a></LI>
+<LI>2 : &lt;dmg&gt; New weapon's melee damage</LI>
 </UL></TR></TD></TABLE>
 <BR>
 </BODY>
