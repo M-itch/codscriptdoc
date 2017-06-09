@@ -15,11 +15,11 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>mysql_free_result( &lt;result&gt; )</H1>
+<H1>getWeaponDamage( &lt;id&gt; )</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
-Module: libcod<BR>
+Module: Weapons<BR>
 </I>
 
 <BR>
@@ -27,7 +27,7 @@ Module: libcod<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Frees the memory allocated for a result set by <a href="libcod/mysql/mysql_store_result.htm">mysql_store_result()</a>.</p>
+<p>Returns weapon's damage</p>
 
 </H3>
 </TR></TD></TABLE>
@@ -37,7 +37,7 @@ Module: libcod<BR>
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
-mysql_free_result( result );
+dmg = getWeaponDamage(id);
 </PRE>
 </H3>
 </TR></TD></TABLE>
@@ -46,7 +46,7 @@ mysql_free_result( result );
 <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
 <TR><TD BGCOLOR="C0D4EE">
 <UL>
-<LI>1 : &lt;result&gt; Result set</LI>
+<LI>1 : &lt;id&gt; Weapon id. You can get it with <a href="libcod/weapons/getloadedweapons.htm">getLoadedWeapons()</a></LI>
 </UL></TR></TD></TABLE>
 <BR>
 </BODY>

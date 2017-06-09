@@ -15,11 +15,11 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>mysql_free_result( &lt;result&gt; )</H1>
+<H1>getLoadedWeapons()</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
-Module: libcod<BR>
+Module: Weapons<BR>
 </I>
 
 <BR>
@@ -27,7 +27,7 @@ Module: libcod<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Frees the memory allocated for a result set by <a href="libcod/mysql/mysql_store_result.htm">mysql_store_result()</a>.</p>
+<p>Returns an array of loaded weapons. Id from this array you can use with <a href="libcod/weapons/getweaponmaxammo.htm">getWeaponMaxAmmo(id)</a> or <a href="libcod/bots/switchtoweaponid.htm">switchToWeaponId(id)</a>, for example.</p>
 
 </H3>
 </TR></TD></TABLE>
@@ -37,17 +37,10 @@ Module: libcod<BR>
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
-mysql_free_result( result );
+loadedweapons = getLoadedWeapons();
 </PRE>
 </H3>
 </TR></TD></TABLE>
-<BR><BR>
-<H2>Required Args:</H2>
-<TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
-<TR><TD BGCOLOR="C0D4EE">
-<UL>
-<LI>1 : &lt;result&gt; Result set</LI>
-</UL></TR></TD></TABLE>
 <BR>
 </BODY>
 </HTML>
