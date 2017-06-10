@@ -12,4 +12,4 @@ It's very good opportunity to learn more in libcod :)
 
 
 ## Support
-If you have a questions or something is wrong - visit out [Killtube thread](https://killtube.org/showthread.php?2935-Script-documentation-2)
+If you have a questions or something is wrong - visit [Killtube thread](https://killtube.org/showthread.php?2935-Script-documentation-2)
