@@ -15,7 +15,7 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>sprintf( &lt;format&gt;, &lt;additional_arguments&gt; )</H1>
+<H1>sprintf( &lt;format&gt;, &lt;arguments&gt; )</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
@@ -27,9 +27,7 @@ Module: Utils<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Composes a string with the same text that would be printed if format was used on printf.<br />
-See <a href="http://www.cplusplus.com/reference/cstdio/sprintf/" target="_blank">http://www.cplusplus.com/reference/cstdio/sprintf/</a>.<br />
-Exception: no buffer/stringpointer is required for sprintf, returns the string to stack instead.</p>
+<p>Returns a composed string with arguments. Use % to replace it with argument.</p>
 </H3>
 </TR></TD></TABLE>
 <BR><BR>
@@ -38,7 +36,7 @@ Exception: no buffer/stringpointer is required for sprintf, returns the string t
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
- text = sprintf("Hello %s!", "COD");
+ text = sprintf( "Hello, %!", "Killtube" );
 </PRE>
 </H3>
 </TR></TD></TABLE>
@@ -47,8 +45,8 @@ Exception: no buffer/stringpointer is required for sprintf, returns the string t
 <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
 <TR><TD BGCOLOR="C0D4EE">
 <UL>
-<LI>1 : &lt;format&gt; string that contains a format string that follows the same specifications as format in <a href="http://www.cplusplus.com/printf" target="_blank">printf</a>.</LI>
-<LI>2 : &lt;additional_arguments&gt; Depending on the format string, the function may expect a sequence of additional arguments, each containing a value to be used to replace a format specifier in the format string.<br />
+<LI>1 : &lt;format&gt; string that contains a format string.</LI>
+<LI>2 : &lt;arguments&gt; depending on the format string, the function may expect a sequence of additional arguments, each containing a value to be used to replace % in the format string.<br />
 There should be at least as many of these arguments as the number of values specified in the format specifiers. Additional arguments are ignored by the function.</LI>
 </UL></TR></TD></TABLE>
 <BR>

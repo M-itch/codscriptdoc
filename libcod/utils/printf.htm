@@ -15,7 +15,7 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>printf( &lt;message&gt; )</H1>
+<H1>printf( &lt;message&gt;, &lt;arguments&gt; )</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
@@ -27,7 +27,7 @@ Module: Utils<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>prints a message in the server console</p>
+<p>Prints a message in the server console. Use % to replace it with argument.</p>
 
 </H3>
 </TR></TD></TABLE>
@@ -37,7 +37,7 @@ Module: Utils<BR>
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
-printf( "server console message\n" );
+printf( "server % message\n", "console" );
 </PRE>
 </H3>
 </TR></TD></TABLE>
@@ -47,6 +47,7 @@ printf( "server console message\n" );
 <TR><TD BGCOLOR="C0D4EE">
 <UL>
 <LI>1 : &lt;message&gt; Message to print</LI>
+<LI>1 : &lt;arguments&gt; Message to print</LI>
 </UL></TR></TD></TABLE>
 <BR>
 </BODY>
