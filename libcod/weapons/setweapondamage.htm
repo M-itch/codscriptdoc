@@ -15,7 +15,7 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>setWeaponDamage( &lt;id&gt;, &lt;dmg&gt; )</H1>
+<H1>setWeaponDamage( &lt;weapon name&gt;, &lt;dmg&gt; )</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
@@ -27,7 +27,7 @@ Module: Weapons<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Set new damage to weapon</p>
+<p>Set new damage to a weapon</p>
 
 </H3>
 </TR></TD></TABLE>
@@ -37,7 +37,7 @@ Module: Weapons<BR>
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
-setWeaponDamage(id, dmg);
+setWeaponDamage(weaponName, dmg);
 </PRE>
 </H3>
 </TR></TD></TABLE>
@@ -46,9 +46,17 @@ setWeaponDamage(id, dmg);
 <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
 <TR><TD BGCOLOR="C0D4EE">
 <UL>
-<LI>1 : &lt;id&gt; Weapon id. You can get it with <a href="getloadedweapons.htm">getLoadedWeapons()</a></LI>
-<LI>2 : &lt;dmg&gt; New weapon's damage</LI>
+<LI>1 : &lt;weapon name&gt;: (string) The weapon name for this weapon.</LI>
+<LI>2 : &lt;dmg&gt; New damage to set</LI>
 </UL></TR></TD></TABLE>
+<BR><BR>
+<H2>Deprecated Args:</H2>
+<TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;id&gt; Weapon id (available for backwards compatibility). You can get it with <a href="getloadedweapons.htm">getLoadedWeapons()</a></LI>
+</UL>
+</TR></TD></TABLE>
 <BR>
 </BODY>
 </HTML>
