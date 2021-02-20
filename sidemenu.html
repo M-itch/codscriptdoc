@@ -48,6 +48,7 @@ function collapseAll()
 	collapse("bots");
 	collapse("entity");
 	collapse("exec");
+	collapse("level");
 	collapse("memory");
 	collapse("mysql");
 	collapse("player");
@@ -98,6 +99,7 @@ function expandAll()
 	expand("bots");
 	expand("entity");
 	expand("exec");
+	expand("level");
 	expand("memory");
 	expand("mysql");
 	expand("player");
@@ -177,6 +179,12 @@ function expandAll()
 <A HREF="libcod/exec/exec_async_checkdone.htm" TARGET="main" >exec_async_checkdone</a><br>
 <A HREF="libcod/exec/exec_async_create.htm" TARGET="main" >exec_async_create</a><br>
 <A HREF="libcod/exec/exec_async_create_nosave.htm" TARGET="main" >exec_async_create_nosave</a><br>
+</div>
+<SPAN CLASS='class1'><a href="" onClick="switchMenu('level'); return false;" title='Expand/Collapse exec'>Level</a><br></SPAN>
+<div id='level' CLASS='cmdlist'>
+<A HREF="libcod/level/getnumberofstaticmodels.htm" TARGET="main" >getnumberofstaticmodels</a><br>
+<A HREF="libcod/level/getstaticmodelname.htm" TARGET="main" >getstaticmodelname</a><br>
+<A HREF="libcod/level/getstaticmodelorigin.htm" TARGET="main" >getstaticmodelorigin</a><br>
 </div>
 <SPAN CLASS='class1'><a href="" onClick="switchMenu('memory'); return false;" title='Expand/Collapse memory'>Memory</a><br></SPAN>
 <div id='memory' CLASS='cmdlist'>
@@ -267,10 +275,11 @@ function expandAll()
 <A HREF="libcod/utils/float.htm" TARGET="main" >float</a><br>
 <A HREF="libcod/utils/sqrt.htm" TARGET="main" >sqrt</a><br>
 <A HREF="libcod/utils/sqrtInv.htm" TARGET="main" >sqrtInv</a><br>
-<br>
 <A HREF="libcod/utils/getAscii.htm" TARGET="main" >getAscii</a><br>
+<A HREF="libcod/utils/getlocaltime.htm" TARGET="main" >getLocalTime</a><br>
+<A HREF="libcod/utils/getserverstarttime.htm" TARGET="main" >getServerStartTime</a><br>
+<A HREF="libcod/utils/getsystemtime.htm" TARGET="main" >getSystemTime</a><br>
 <A HREF="libcod/utils/getType.htm" TARGET="main" >getType</a><br>
-<br>
 <A HREF="libcod/utils/printf.htm" TARGET="main" >printf</a><br>
 <A HREF="libcod/utils/sprintf.htm" TARGET="main" >sprintf</a><br>
 <A HREF="libcod/utils/file_exists.htm" TARGET="main" >file_exists</a><br>
