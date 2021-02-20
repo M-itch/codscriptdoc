@@ -15,11 +15,11 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>renameClient( &lt;new name&gt; )</H1>
+<H1>getSysMilliseconds()</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
-Module: Player<BR>
+Module: Utils<BR>
 </I>
 
 <BR>
@@ -27,17 +27,8 @@ Module: Player<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Renames a client's name</p>
+<p>Returns server start time in the number of milliseconds.</p>
 
-</H3>
-</TR></TD></TABLE>
-<BR><BR>
-<H2>Call this on:</H2>
-<TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
-<TR><TD BGCOLOR="C0D4EE">
-<H3>
-A player (including bots)
-</PRE>
 </H3>
 </TR></TD></TABLE>
 <BR><BR>
@@ -46,17 +37,18 @@ A player (including bots)
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
- player renameClient( "John Doe" );
+startStartTimeInMs = getSysMilliseconds();
 </PRE>
 </H3>
 </TR></TD></TABLE>
 <BR><BR>
-<H2>Required Args:</H2>
+<H2>Notes:</H2>
 <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
-<TR><TD BGCOLOR="C0D4EE">
-<UL>
-<LI>1 : &lt;new name&gt; The player's new name</LI>
-</UL></TR></TD></TABLE>
+<TR><TD BGCOLOR="222222">
+<PRE>
+The return value breaks after about 24 days due to int overflow.
+</PRE>
+</TR></TD></TABLE>
 <BR>
 </BODY>
 </HTML>
