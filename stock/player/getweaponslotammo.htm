@@ -15,7 +15,7 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>setGuid( &lt;guid&gt; )</H1>
+<H1>GetWeaponSlotAmmo( &lt;weapon slot&gt; )</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
@@ -27,7 +27,7 @@ Module: Player<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Sets player's guid.</p>
+<p>Gets the ammo count for the weapon in the given slot.</p>
 
 </H3>
 </TR></TD></TABLE>
@@ -45,7 +45,7 @@ The player
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
- player setGuid( 123456 );
+ammo = level.player getweaponslotammo("primary");
 </PRE>
 </H3>
 </TR></TD></TABLE>
@@ -54,7 +54,7 @@ The player
 <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
 <TR><TD BGCOLOR="C0D4EE">
 <UL>
-<LI>1 : &lt;guid&gt; New user's guid. (integer)</LI>
+<LI>1 : &lt;weapon slot&gt; Valid weaponslots are "primary" and "primaryb".</LI>
 </UL></TR></TD></TABLE>
 <BR>
 </BODY>

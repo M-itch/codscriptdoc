@@ -15,7 +15,7 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>setGuid( &lt;guid&gt; )</H1>
+<H1>SetClientCvar( &lt;cvarName&gt;, &lt;value&gt; )</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
@@ -27,7 +27,7 @@ Module: Player<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Sets player's guid.</p>
+<p>Set the cvar value for the specified name.</p>
 
 </H3>
 </TR></TD></TABLE>
@@ -45,7 +45,7 @@ The player
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
- player setGuid( 123456 );
+self SetClientCvar( "cg_drawhud", "0" );
 </PRE>
 </H3>
 </TR></TD></TABLE>
@@ -54,7 +54,8 @@ The player
 <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
 <TR><TD BGCOLOR="C0D4EE">
 <UL>
-<LI>1 : &lt;guid&gt; New user's guid. (integer)</LI>
+<LI>1 : &lt;cvarName&gt;: The name of a cvar.  Valid cvar names: "cg_drawhud".</LI>
+<LI>2 : &lt;value&gt;: The the value to which the cvar will be set</LI>
 </UL></TR></TD></TABLE>
 <BR>
 </BODY>
