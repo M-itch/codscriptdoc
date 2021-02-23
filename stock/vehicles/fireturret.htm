@@ -15,7 +15,7 @@ UL  { margin-bottom:0; }
 </style>
 
 <HR>
-<H1>FireWeapon( &lt;barrel tag&gt;, &lt;target ent&gt;, &lt;target offset&gt; )</H1>
+<H1>FireTurret()</H1>
 <HR>
 <BODY BGCOLOR='B0C4DE'>
 <I>
@@ -28,7 +28,7 @@ SP Only<BR>
 <TABLE BORDER='1' CELLSPACING='1' CELLPADDING='4' WIDTH='100%'>
 <TR><TD BGCOLOR="C0D4EE">
 <H3>
-<p>Fire the vehicle's weapon</p>
+<p>Fire the vehicle's turret</p>
 
 </H3>
 </TR></TD></TABLE>
@@ -46,19 +46,10 @@ a vehicle
 <TR><TD BGCOLOR="222222">
 <H3>
 <PRE>
-nFlak FireWeapon();
+self FireTurret();
 </PRE>
 </H3>
 </TR></TD></TABLE>
-<BR><BR>
-<H2>Optional Args</H2>
-<TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
-<TR><TD BGCOLOR="C0D4EE">
-<UL>
-<LI>1 : &lt;barrel tag&gt;    The tag name of the barrel to fire from.  Passing in nothing or an empty string will default to use the vehicle's main turret.</LI>
-<LI>2 : &lt;target ent&gt;    A target entity for guided missiles</LI>
-<LI>3 : &lt;target offset&gt;</LI>
-</UL></TR></TD></TABLE>
 <BR>
 </BODY>
 </HTML>
